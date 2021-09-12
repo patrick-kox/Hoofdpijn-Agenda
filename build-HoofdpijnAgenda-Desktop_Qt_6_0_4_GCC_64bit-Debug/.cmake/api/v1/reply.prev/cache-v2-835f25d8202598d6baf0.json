@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug"
+			"value" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -487,7 +487,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda"
+			"value" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug"
+			"value" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug"
 		},
 		{
 			"name" : "HoofdpijnAgenda_IS_TOP_LEVEL",
@@ -1191,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda"
+			"value" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",

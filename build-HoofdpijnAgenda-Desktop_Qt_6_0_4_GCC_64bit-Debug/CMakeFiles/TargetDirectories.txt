@@ -1,5 +1,5 @@
-/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
-/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
-/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/HoofdpijnAgenda.dir
-/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/HoofdpijnAgenda_autogen_timestamp_deps.dir
-/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/HoofdpijnAgenda_autogen.dir
+/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
+/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
+/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/HoofdpijnAgenda.dir
+/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/HoofdpijnAgenda_autogen_timestamp_deps.dir
+/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/HoofdpijnAgenda_autogen.dir

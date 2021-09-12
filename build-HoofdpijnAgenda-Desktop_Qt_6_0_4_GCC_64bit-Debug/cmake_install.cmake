@@ -1,4 +1,4 @@
-# Install script for directory: /home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda
+# Install script for directory: /home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

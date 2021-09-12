@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__HoofdpijnAgenda_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/patrick/Qt/Tools/CMake/bin/cmake --regenerate-during-build -S"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda" -B"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug"
+  command = /home/patrick/Qt/Tools/CMake/bin/cmake --regenerate-during-build -S/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda -B/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for re-checking globbed directories.
 
 rule VERIFY_GLOBS
-  command = /home/patrick/Qt/Tools/CMake/bin/cmake -P "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/VerifyGlobs.cmake"
+  command = /home/patrick/Qt/Tools/CMake/bin/cmake -P /home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/VerifyGlobs.cmake
   description = Re-checking globbed directories...
   generator = 1
 

@@ -102,14 +102,14 @@
 			"includes" : 
 			[
 				{
-					"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug"
+					"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug"
 				},
 				{
-					"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda"
+					"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda"
 				},
 				{
 					"backtrace" : 0,
-					"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/include"
+					"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/include"
 				},
 				{
 					"backtrace" : 6,
@@ -233,7 +233,7 @@
 			"sourceIndexes" : 
 			[
 				3,
-				7
+				6
 			]
 		},
 		{
@@ -242,17 +242,15 @@
 			[
 				4,
 				5,
-				6,
-				8
+				7
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				9,
-				10,
-				11
+				8,
+				9
 			]
 		}
 	],
@@ -262,7 +260,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/mocs_compilation.cpp",
+			"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -294,21 +292,15 @@
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 4,
-			"isGenerated" : true,
-			"path" : "HoofdpijnAgenda_en_GB.ts",
-			"sourceGroupIndex" : 2
-		},
-		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/include/ui_mainwindow.h",
+			"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/include/ui_mainwindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/timestamp",
+			"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -320,13 +312,7 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "HoofdpijnAgenda_en_GB.ts.rule",
-			"sourceGroupIndex" : 3
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/timestamp.rule",
+			"path" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

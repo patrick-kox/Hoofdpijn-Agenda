@@ -1,16 +1,16 @@
 {
-	"BUILD_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen",
-	"CMAKE_BINARY_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda",
+	"BUILD_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen",
+	"CMAKE_BINARY_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda",
 	"CMAKE_EXECUTABLE" : "/home/patrick/Qt/Tools/CMake/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda/CMakeLists.txt",
+		"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda/CMakeLists.txt",
 		"/home/patrick/Qt/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake",
-		"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/3.21.1/CMakeSystem.cmake",
+		"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/3.21.1/CMakeSystem.cmake",
 		"/home/patrick/Qt/Tools/CMake/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake",
-		"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake",
+		"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake",
 		"/home/patrick/Qt/Tools/CMake/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake",
 		"/home/patrick/Qt/Tools/CMake/share/cmake-3.21/Modules/CMakeGenericSystem.cmake",
 		"/home/patrick/Qt/Tools/CMake/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake",
@@ -196,21 +196,21 @@
 		"/home/patrick/Qt/6.0.4/gcc_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake",
 		"/home/patrick/Qt/Tools/CMake/share/cmake-3.21/Modules/CMakeParseArguments.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda",
-	"DEP_FILE" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda",
+	"DEP_FILE" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "HoofdpijnAgenda_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda/mainwindow.h",
+			"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -221,8 +221,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug",
-		"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda",
+		"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug",
+		"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda",
 		"/home/patrick/Qt/6.0.4/gcc_64/include/QtCore",
 		"/home/patrick/Qt/6.0.4/gcc_64/include",
 		"/home/patrick/Qt/6.0.4/gcc_64/mkspecs/linux-g++",
@@ -247,26 +247,26 @@
 		"-c",
 		"/home/patrick/Qt/Tools/CMake/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/HoofdpijnAgenda_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/HoofdpijnAgenda_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/HoofdpijnAgenda_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/home/patrick/Qt/6.0.4/gcc_64/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/home/patrick/Qt/6.0.4/gcc_64/bin/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 0,
-	"SETTINGS_FILE" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/HoofdpijnAgenda_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_0_4_GCC_64bit-Debug/CMakeFiles/HoofdpijnAgenda_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda/main.cpp",
+			"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/Hoofdpijn Agenda/HoofdpijnAgenda/mainwindow.cpp",
+			"/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda/mainwindow.cpp",
 			"MU",
 			null
 		]
