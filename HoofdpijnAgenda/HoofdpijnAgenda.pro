@@ -31,3 +31,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     HoofdpijnAgenda_en_US.ts
+
+RESOURCES += \
+    Resources.qrc

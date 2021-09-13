@@ -10,10 +10,72 @@
     <height>600</height>
    </rect>
   </property>
-  <property name="windowTitle">
-   <string>MainWindow</string>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Hoofdpijn Agenda</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Background">
+    <property name="geometry">
+     <rect>
+      <x>-6</x>
+      <y>-9</y>
+      <width>811</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Resources.qrc">:/images/iStock-1146312637.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>510</y>
+      <width>801</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Hoofdpijn Agenda</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -27,17 +89,86 @@
     <property name="title">
      <string>&amp;Bestand</string>
     </property>
+    <addaction name="action_Gebruikers_Gegevens"/>
+    <addaction name="action_Hoofdpijn_Toevoegen"/>
+    <addaction name="actionToon_meest_Recente_Hoofdpijn_Aanvallen"/>
+    <addaction name="actionToon_Alle_Hoofdpijn_Aanvallen"/>
+    <addaction name="separator"/>
+    <addaction name="action_Afsluiten"/>
    </widget>
    <widget class="QMenu" name="menuHulpmiddelen">
     <property name="title">
      <string>&amp;Hulpmiddellen</string>
     </property>
+    <addaction name="actionGegevens_Exporteren"/>
+    <addaction name="action_Gegevensbestand_Herstellen"/>
+   </widget>
+   <widget class="QMenu" name="menuH_ulp">
+    <property name="title">
+     <string>H&amp;ulp</string>
+    </property>
+    <addaction name="action_Help"/>
+    <addaction name="action_Informatie"/>
+   </widget>
+   <widget class="QMenu" name="menu_Rapporten">
+    <property name="title">
+     <string>&amp;Rapporten</string>
+    </property>
    </widget>
    <addaction name="menuBestand"/>
    <addaction name="menuHulpmiddelen"/>
+   <addaction name="menu_Rapporten"/>
+   <addaction name="menuH_ulp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Gebruikers_Gegevens">
+   <property name="text">
+    <string>&amp;Gebruikers Gegevens</string>
+   </property>
+  </action>
+  <action name="action_Hoofdpijn_Toevoegen">
+   <property name="text">
+    <string>&amp;Hoofdpijn Toevoegen</string>
+   </property>
+  </action>
+  <action name="actionToon_meest_Recente_Hoofdpijn_Aanvallen">
+   <property name="text">
+    <string>Toon meest &amp;Recente Hoofdpijn Aanvallen</string>
+   </property>
+  </action>
+  <action name="actionToon_Alle_Hoofdpijn_Aanvallen">
+   <property name="text">
+    <string>&amp;Toon Alle Hoofdpijn Aanvallen</string>
+   </property>
+  </action>
+  <action name="action_Afsluiten">
+   <property name="text">
+    <string>&amp;Afsluiten</string>
+   </property>
+  </action>
+  <action name="action_Help">
+   <property name="text">
+    <string>&amp;Help</string>
+   </property>
+  </action>
+  <action name="action_Informatie">
+   <property name="text">
+    <string>&amp;Informatie</string>
+   </property>
+  </action>
+  <action name="action_Gegevensbestand_Herstellen">
+   <property name="text">
+    <string>&amp;Gegevensbestand Herstellen</string>
+   </property>
+  </action>
+  <action name="actionGegevens_Exporteren">
+   <property name="text">
+    <string>Gegevens &amp;Exporteren</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -53,10 +53,12 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../HoofdpijnAgenda/main.cpp \
-		../HoofdpijnAgenda/mainwindow.cpp qrc_qmake_qmake_qm_files.cpp \
+		../HoofdpijnAgenda/mainwindow.cpp qrc_Resources.cpp \
+		qrc_qmake_qmake_qm_files.cpp \
 		moc_mainwindow.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
+		qrc_Resources.o \
 		qrc_qmake_qmake_qm_files.o \
 		moc_mainwindow.o
 DIST          = ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts \
@@ -292,6 +294,7 @@ Makefile: ../HoofdpijnAgenda/HoofdpijnAgenda.pro ../../../../Qt/6.0.4/gcc_64/mks
 		../../../../Qt/6.0.4/gcc_64/mkspecs/features/yacc.prf \
 		../../../../Qt/6.0.4/gcc_64/mkspecs/features/lex.prf \
 		../HoofdpijnAgenda/HoofdpijnAgenda.pro \
+		../HoofdpijnAgenda/Resources.qrc \
 		qmake_qmake_qm_files.qrc \
 		../../../../Qt/6.0.4/gcc_64/lib/libQt6Widgets.prl \
 		../../../../Qt/6.0.4/gcc_64/lib/libQt6Gui.prl \
@@ -407,6 +410,7 @@ Makefile: ../HoofdpijnAgenda/HoofdpijnAgenda.pro ../../../../Qt/6.0.4/gcc_64/mks
 ../../../../Qt/6.0.4/gcc_64/mkspecs/features/yacc.prf:
 ../../../../Qt/6.0.4/gcc_64/mkspecs/features/lex.prf:
 ../HoofdpijnAgenda/HoofdpijnAgenda.pro:
+../HoofdpijnAgenda/Resources.qrc:
 qmake_qmake_qm_files.qrc:
 ../../../../Qt/6.0.4/gcc_64/lib/libQt6Widgets.prl:
 ../../../../Qt/6.0.4/gcc_64/lib/libQt6Gui.prl:
@@ -426,7 +430,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../HoofdpijnAgenda/HoofdpijnAgenda_nl_BE.ts ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts $(DISTDIR)/
-	$(COPY_FILE) --parents qmake_qmake_qm_files.qrc $(DISTDIR)/
+	$(COPY_FILE) --parents ../HoofdpijnAgenda/Resources.qrc qmake_qmake_qm_files.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../Qt/6.0.4/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../HoofdpijnAgenda/mainwindow.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.cpp $(DISTDIR)/
@@ -464,9 +468,14 @@ compiler_lrelease_clean:
 .qm/HoofdpijnAgenda_en_US.qm: ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts
 	/home/patrick/Qt/6.0.4/gcc_64/bin/lrelease ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts -qm .qm/HoofdpijnAgenda_en_US.qm
 
-compiler_rcc_make_all: qrc_qmake_qmake_qm_files.cpp
+compiler_rcc_make_all: qrc_Resources.cpp qrc_qmake_qmake_qm_files.cpp
 compiler_rcc_clean:
-	-$(DEL_FILE) qrc_qmake_qmake_qm_files.cpp
+	-$(DEL_FILE) qrc_Resources.cpp qrc_qmake_qmake_qm_files.cpp
+qrc_Resources.cpp: ../HoofdpijnAgenda/Resources.qrc \
+		../../../../Qt/6.0.4/gcc_64/bin/rcc \
+		../HoofdpijnAgenda/iStock-1146312637.jpg
+	/home/patrick/Qt/6.0.4/gcc_64/bin/rcc -name Resources ../HoofdpijnAgenda/Resources.qrc -o qrc_Resources.cpp
+
 qrc_qmake_qmake_qm_files.cpp: qmake_qmake_qm_files.qrc \
 		../../../../Qt/6.0.4/gcc_64/bin/rcc \
 		.qm/HoofdpijnAgenda_en_US.qm \
@@ -931,6 +940,9 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qstatusbar.h \
 		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../HoofdpijnAgenda/mainwindow.cpp
+
+qrc_Resources.o: qrc_Resources.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_Resources.o qrc_Resources.cpp
 
 qrc_qmake_qmake_qm_files.o: qrc_qmake_qmake_qm_files.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_qmake_qmake_qm_files.o qrc_qmake_qmake_qm_files.cpp

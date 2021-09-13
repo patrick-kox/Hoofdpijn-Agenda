@@ -10,13 +10,43 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="28"/>
-        <source>Bestand</source>
-        <translation>&amp;File</translation>
+        <source>&amp;Bestand</source>
+        <oldsource>Bestand</oldsource>
+        <translation type="unfinished">&amp;File</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="33"/>
+        <location filename="mainwindow.ui" line="39"/>
+        <source>&amp;Hulpmiddellen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="48"/>
+        <source>&amp;Gebruikers Gegevens</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="53"/>
+        <source>&amp;Hoofdpijn Toevoegen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="58"/>
+        <source>Toon meest &amp;Recente Hoofdpijn Aanvallen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="63"/>
+        <source>&amp;Toon Alle Hoofdpijn Aanvallen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="68"/>
+        <source>&amp;Afsluiten</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Hulpmiddelen</source>
-        <translation>&amp;Tools</translation>
+        <translation type="vanished">&amp;Tools</translation>
     </message>
 </context>
 </TS>
