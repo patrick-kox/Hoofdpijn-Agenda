@@ -1,5 +1,17 @@
 <RCC>
     <qresource prefix="/images">
         <file>iStock-1146312637.jpg</file>
+        <file>HoofdpijnAgenda.jpg</file>
+        <file>gplv3-with-text-136x68.png</file>
+        <file>banner.jpg</file>
+        <file>Icon_new.prv.jpg</file>
+        <file>Icon_new.xpm</file>
+        <file>Icon.xpm</file>
+        <file>Icon1.prv.jpg</file>
+        <file>Icon1.xpm</file>
+        <file>Icon2.prv.jpg</file>
+        <file>Icon2.xpm</file>
+        <file>site-icon_w.png</file>
+        <file>site-icon.png</file>
     </qresource>
 </RCC>
