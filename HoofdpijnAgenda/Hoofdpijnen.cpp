@@ -32,7 +32,7 @@ Hoofdpijnen::Hoofdpijnen (int ernst, char enkelzijdig, bool kloppend, bool hinde
             bool maandstonden, bool verminderingVanLevensritme, bool voedingsstoffenOfDrank, bool stress, QString andereTriggers,
             QString geneesmiddel_1, QString geneesmiddel_2, QString geneesmiddel_3, QString geneesmiddel_4,
             int tijdelijkOphoudenMetWerken, bool verstoordFamiliaalLeven, bool verstoordeVrijetijdsbesteding,
-                          int duurVanDeAanval, QDate datum)
+            int duurVanDeAanval, QDate datum)
 {
     this->ernst = ernst;
     this->enkelzijdig = enkelzijdig;
@@ -59,179 +59,179 @@ Hoofdpijnen::Hoofdpijnen (int ernst, char enkelzijdig, bool kloppend, bool hinde
     this->geneesmiddel_4 = geneesmiddel_4;
     this->tijdelijkOphoudenMetWerken = tijdelijkOphoudenMetWerken;
     this->verstoordFamiliaalLeven = verstoordFamiliaalLeven;
-    this->versootdeVrijeTijdsbesteding = verstoordeVrijetijdsbesteding;
+    this->verstoordeVrijeTijdsbesteding = verstoordeVrijetijdsbesteding;
     this->duurVanDeAanval = duurVanDeAanval;
     this->datum = datum;
 }
 // Getters
 int Hoofdpijnen::getErnst() const {
-
+    return ernst;
 }
 
 char Hoofdpijnen::getEnkelzijdig() const {
-
+    return enkelzijdig;
 }
 bool Hoofdpijnen::getKloppend() const {
-
+    return kloppend;
 }
 bool Hoofdpijnen::getHindertDagelijkseActiviteiten() const {
-
+    return hindertDagelijkseActiviteiten;
 }
 bool Hoofdpijnen::getErgerBijBeweging() const {
-
+    return ergerBijBeweging;
 }
 QString Hoofdpijnen::getAndereKenmerken() const {
-
+    return andereKenmerken;
 }
 bool Hoofdpijnen::getBraakneigingen() const {
-
+    return braakneigingen;
 }
 bool Hoofdpijnen::getBraken() const {
-
+    return braken;
 }
 bool Hoofdpijnen::getOvergevoeligVoorLicht() const {
-
+    return overgevoeligVoorLicht;
 }
 bool Hoofdpijnen::getOvergevoeligVoorGeluid() const {
-
+    return overgevoeligVoorGeluid;
 }
 char Hoofdpijnen::getStoornissenVanHetZicht() const {
-
+    return stoornissenVanHetZicht;
 }
 char Hoofdpijnen::getTintelingen() const {
-
+    return tintelingen;
 }
 char Hoofdpijnen::getDoofGevoel() const {
-
+    return doofGevoel;
 }
 bool Hoofdpijnen::getSpraakstoornissen() const {
-
+    return spraakstoornissen;
 }
 bool Hoofdpijnen::getMaandstonden() const {
-
+    return maandstonden;
 }
 bool Hoofdpijnen::getVerminderingVanLevensritme() const {
-
+    return verminderingVanLevensritme;
 }
 bool Hoofdpijnen::getVoedingsstoffenOfDrank() const {
-
+    return voedingsstoffenOfDrank;
 }
 bool Hoofdpijnen::getStress() const {
-
+    return stress;
 }
 QString Hoofdpijnen::getAndereTriggers() const {
-
+    return andereTriggers;
 }
 QString Hoofdpijnen::getGeneesmiddel_1() const {
-
+    return geneesmiddel_1;
 }
 QString Hoofdpijnen::getGeneesmiddel_2() const {
-
+    return geneesmiddel_2;
 }
 QString Hoofdpijnen::getGeneesmiddel_3() const {
-
+    return geneesmiddel_3;
 }
 QString Hoofdpijnen::getGeneesmiddel_4() const {
-
+    return geneesmiddel_4;
 }
 int Hoofdpijnen::getTijdelijkOphoudenMetWerken() const {
-
+    return tijdelijkOphoudenMetWerken;
 }
 bool Hoofdpijnen::getVerstoordFamiliaalLeven() const {
-
+    return verstoordFamiliaalLeven;
 }
 bool Hoofdpijnen::getVerstoordeVrijetijdsbesteding() const {
-
+    return verstoordeVrijeTijdsbesteding;
 }
 int Hoofdpijnen::getDuurVanDeAanval() const {
-
+    return duurVanDeAanval;
 }
 QDate Hoofdpijnen::getDatum() const {
-
+    return datum;
 }
 
 // Setter
-void Hoofdpijnen::setErnst(int) {
-
+void Hoofdpijnen::setErnst(int ernst) {
+    this->ernst = ernst;
 }
-void Hoofdpijnen:: setEnkelzijdig(char) {
-
+void Hoofdpijnen:: setEnkelzijdig(char enkelzijdig) {
+    this->enkelzijdig = enkelzijdig;
 }
-void Hoofdpijnen::setKloppend(bool) {
-
+void Hoofdpijnen::setKloppend(bool kloppend) {
+    this->kloppend = kloppend;
 }
-void Hoofdpijnen::setHindertDagelijkseActiviteiten(bool) {
-
+void Hoofdpijnen::setHindertDagelijkseActiviteiten(bool hindertDagelijkseActiviteiten) {
+    this->hindertDagelijkseActiviteiten = hindertDagelijkseActiviteiten;
 }
-void Hoofdpijnen::setErgerBijBeweging(bool) {
-
+void Hoofdpijnen::setErgerBijBeweging(bool ergerBijBeweging) {
+    this->ergerBijBeweging = ergerBijBeweging;
 }
-void Hoofdpijnen::setAndereKenmerken(QString) {
-
+void Hoofdpijnen::setAndereKenmerken(QString andereKenmerken) {
+    this->andereKenmerken = andereKenmerken;
 }
-void Hoofdpijnen::setBraakneigingen(bool) {
-
+void Hoofdpijnen::setBraakneigingen(bool braakneigingen) {
+    this->braakneigingen = braakneigingen;
 }
-void Hoofdpijnen::setBraken(bool) {
-
+void Hoofdpijnen::setBraken(bool braken) {
+    this->braken = braken;
 }
-void Hoofdpijnen::setOvergevoeligVoorLicht(bool) {
-
+void Hoofdpijnen::setOvergevoeligVoorLicht(bool overgevoeligVoorLight) {
+    this->overgevoeligVoorLicht = overgevoeligVoorLight;
 }
-void Hoofdpijnen::setOvergevoeligVoorGeluid(bool) {
-
+void Hoofdpijnen::setOvergevoeligVoorGeluid(bool overgevoeligVoorGeluid) {
+    this->overgevoeligVoorGeluid = overgevoeligVoorGeluid;
 }
-void Hoofdpijnen::setStoornissenVanHetZicht(char) {
-
+void Hoofdpijnen::setStoornissenVanHetZicht(char stoornissenVanHetZicht) {
+    this->stoornissenVanHetZicht = stoornissenVanHetZicht;
 }
-void Hoofdpijnen::setTintelingen(char) {
-
+void Hoofdpijnen::setTintelingen(char tintelingen) {
+    this->tintelingen = tintelingen;
 }
-void Hoofdpijnen::setDoofGevoel(char) {
-
+void Hoofdpijnen::setDoofGevoel(char doofGevoel) {
+    this->doofGevoel = doofGevoel;
 }
-void Hoofdpijnen::setSpraakstoornissen(bool) {
-
+void Hoofdpijnen::setSpraakstoornissen(bool spraakstoornissen) {
+    this->spraakstoornissen = spraakstoornissen;
 }
-void Hoofdpijnen::setMaandstonden(bool) {
-
+void Hoofdpijnen::setMaandstonden(bool maandstonden) {
+    this->maandstonden = maandstonden;
 }
-void Hoofdpijnen::setVerminderingVanLevensritme(bool) {
-
+void Hoofdpijnen::setVerminderingVanLevensritme(bool verminderingVanLevensritme) {
+    this->verminderingVanLevensritme = verminderingVanLevensritme;
 }
-void Hoofdpijnen::setVoedingsstoffenOfDrank(bool) {
-
+void Hoofdpijnen::setVoedingsstoffenOfDrank(bool voedingsstoffenOfDrank) {
+    this->voedingsstoffenOfDrank = voedingsstoffenOfDrank;
 }
-void Hoofdpijnen::setStress(bool) {
-
+void Hoofdpijnen::setStress(bool stress) {
+    this->stress = stress;
 }
-void Hoofdpijnen:: setAndereTriggers(QString) {
-
+void Hoofdpijnen:: setAndereTriggers(QString andereTriggers) {
+    this->andereTriggers = andereTriggers;
 }
-void Hoofdpijnen::setGeneesmiddel_1(QString) {
-
+void Hoofdpijnen::setGeneesmiddel_1(QString geneesmiddel) {
+    this->geneesmiddel_1 = geneesmiddel;
 }
-void Hoofdpijnen::setGeneesmiddel_2(QString) {
-
+void Hoofdpijnen::setGeneesmiddel_2(QString geneesmiddel) {
+    this->geneesmiddel_2 = geneesmiddel;
 }
-void Hoofdpijnen::setGeneesmiddel_3(QString) {
-
+void Hoofdpijnen::setGeneesmiddel_3(QString geneesmiddel) {
+    this->geneesmiddel_3 = geneesmiddel;
 }
-void Hoofdpijnen::setGeneesmiddel_4(QString) {
-
+void Hoofdpijnen::setGeneesmiddel_4(QString geneesmiddel) {
+    this->geneesmiddel_4 = geneesmiddel;
 }
-void Hoofdpijnen::setTijdelijkOphoudenMetWerken(int) {
-
+void Hoofdpijnen::setTijdelijkOphoudenMetWerken(int tijdelijkOphoudenMetWerken) {
+    this->tijdelijkOphoudenMetWerken = tijdelijkOphoudenMetWerken;
 }
-void Hoofdpijnen::setVerstoordFamiliaalLeven(int) {
-
+void Hoofdpijnen::setVerstoordFamiliaalLeven(int verstoordFamiliaalLeven) {
+    this->verstoordFamiliaalLeven = verstoordFamiliaalLeven;
 }
-void Hoofdpijnen::setVerstoordeVrijetijdsbesteding(bool) {
-
+void Hoofdpijnen::setVerstoordeVrijetijdsbesteding(bool verstoordeVrijetijdsbesteding) {
+    this->verstoordeVrijeTijdsbesteding = verstoordeVrijetijdsbesteding;
 }
-void Hoofdpijnen::setDuurVanDeAanval(int) {
-
+void Hoofdpijnen::setDuurVanDeAanval(int duurVanDeAanval) {
+    this->duurVanDeAanval = duurVanDeAanval;
 }
-void Hoofdpijnen::setDatum(QDate) {
-
+void Hoofdpijnen::setDatum(QDate datum) {
+    this->datum = datum;
 }

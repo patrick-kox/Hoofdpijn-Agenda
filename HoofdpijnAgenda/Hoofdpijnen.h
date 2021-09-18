@@ -140,7 +140,7 @@ private:
     // Invloed op de activiteiten (Influence of activities)
     int tijdelijkOphoudenMetWerken;		// aantal dagen
     bool verstoordFamiliaalLeven;
-    bool versootdeVrijeTijdsbesteding;
+    bool verstoordeVrijeTijdsbesteding;
 
     // Duur van de aanval (duration of the attack).
     int duurVanDeAanval;
