@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,11 +10,13 @@ CONFIG += c++11
 
 SOURCES += \
     Hoofdpijnen.cpp \
+    initializeDB.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     Hoofdpijnen.h \
+    initializeDB.h \
     mainwindow.h
 
 FORMS += \
@@ -33,6 +35,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     HoofdpijnAgenda_en_US.ts
+    HoofdpijnAgenda_nl_BE.ts
 
 RESOURCES += \
     Resources.qrc

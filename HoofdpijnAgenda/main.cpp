@@ -12,7 +12,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
+along with Hoofdpijn Agenda. If not, see <https://www.gnu.org/licenses/>.
 */
 
 /*
@@ -21,11 +21,20 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 
 #include "mainwindow.h"
 #include "Hoofdpijnen.h"
+#include "initializeDB.h"
 
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
 #include <QVector>
+
+// SQL
+#include <QtSql>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+
+// Debugging
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
@@ -40,6 +49,29 @@ int main(int argc, char *argv[])
             break;
         }
     }
+
+    // Open database file
+    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("Hoofdpijnen.sqlite3");
+    if (db.open())
+    {
+        qDebug() << "Databestand hoofdpijnen.sqlite3 geopend.";
+        QString command = "SELECT * FROM Gebruikers";
+        QSqlQuery query(db);
+        if (!query.exec(command))
+        {
+            qDebug() << "Gegevensbestand wordt aangemaakt.";
+            db.close();
+           initializeDB(db);
+           db.open();
+        }
+    }
+    else
+    {
+        qDebug() << "Fout bij openen van databestand!";
+        exit(1);
+    }
+
     MainWindow w;
     w.show();
     return a.exec();
