@@ -22,6 +22,7 @@ along with Hoofdpijn Agenda. If not, see <https://www.gnu.org/licenses/>.
 #include "mainwindow.h"
 #include "Hoofdpijnen.h"
 #include "initializeDB.h"
+#include "gebruikersgegevens.h"
 
 #include <QApplication>
 #include <QLocale>

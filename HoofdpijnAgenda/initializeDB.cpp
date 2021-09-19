@@ -20,6 +20,8 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 #include "initializeDB.h"
+#include "gebruikersgegevens.h"
+
 #include <QtSql>
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -64,7 +66,7 @@ void initializeDB(QSqlDatabase db) {
         }
 
         // Rebuild the users database table
-        command = "CREATE TABLE Gebruikers(id INTEGER PRIMARY KEY AUTOINCREMENT, voornaam TEXT, Achternaam TEXT, Geslacht TEXT, straat TEXT, huisnummer TEXT, postcode TEXT, gemeente TEXT, leeftijd INTEGER);";
+        command = "CREATE TABLE Gebruikers(id INTEGER PRIMARY KEY AUTOINCREMENT, voornaam TEXT, achternaam TEXT, geslacht TEXT, straat TEXT, huisnummer TEXT, postcode TEXT, gemeente TEXT, leeftijd INTEGER);";
         if (query.exec(command)) {
             qDebug() << "Gebruikers tabel aangemaakt";
         }
@@ -98,4 +100,8 @@ void initializeDB(QSqlDatabase db) {
         db.close();
         exit(1);
     }
+    // gebruiker toevoegen
+    GebruikersGegevens *data = new GebruikersGegevens;
+    qDebug() << "Toon gebruikersgegevens";
+    data->show();
 }

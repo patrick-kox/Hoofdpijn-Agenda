@@ -23,9 +23,11 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QVector>
+#include "Hoofdpijnen.h"
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
+namespace Ui { class MainWindow;}
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
@@ -38,6 +40,10 @@ public:
 
 private slots:
     void on_action_Afsluiten_triggered();
+
+    void on_action_Gebruikers_Gegevens_triggered();
+
+    void on_action_Hoofdpijn_Toevoegen_triggered();
 
 private:
     Ui::MainWindow *ui;

@@ -21,6 +21,8 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "gebruikersgegevens.h"
+#include "hoofdpijntoevoegen.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -34,9 +36,23 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
 void MainWindow::on_action_Afsluiten_triggered()
 {
      QCoreApplication::quit();
+}
+
+void MainWindow::on_action_Gebruikers_Gegevens_triggered()
+{
+    GebruikersGegevens *data = new GebruikersGegevens;
+    qDebug() << "Toon gebruikersgegevens";
+    data->show();
+}
+
+
+void MainWindow::on_action_Hoofdpijn_Toevoegen_triggered()
+{
+    HoofdpijnToevoegen *hoofdpijn = new HoofdpijnToevoegen;
+    qDebug() << "Voeg een hoofdpijn aanval toe";
+    hoofdpijn->show();
 }
 

@@ -10,16 +10,22 @@ CONFIG += c++11
 
 SOURCES += \
     Hoofdpijnen.cpp \
+    gebruikersgegevens.cpp \
+    hoofdpijntoevoegen.cpp \
     initializeDB.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     Hoofdpijnen.h \
+    gebruikersgegevens.h \
+    hoofdpijntoevoegen.h \
     initializeDB.h \
     mainwindow.h
 
 FORMS += \
+    gebruikersgegevens.ui \
+    hoofdpijntoevoegen.ui \
     mainwindow.ui
 
 TRANSLATIONS += \
