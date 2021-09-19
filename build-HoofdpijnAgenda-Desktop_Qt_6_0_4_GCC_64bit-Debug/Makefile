@@ -1180,37 +1180,6 @@ gebruikersgegevens.o: ../HoofdpijnAgenda/gebruikersgegevens.cpp ../HoofdpijnAgen
 		../../../../Qt/6.0.4/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.0.4/gcc_64/include/QtGui/QTransform \
 		ui_gebruikersgegevens.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtCore/QVariant \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QAbstractButton \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qicon.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QApplication \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qapplication.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtCore/qeventloop.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtCore/qlocale.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QDialogButtonBox \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QFormLayout \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qformlayout.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QLayout \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qlayout.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QLabel \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qlabel.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qframe.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qpicture.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QLineEdit \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qlineedit.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qtextcursor.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qtextformat.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qpen.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qtextoption.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QVBoxLayout \
 		../../../../Qt/6.0.4/gcc_64/include/QtSql/QSqlDatabase \
 		../../../../Qt/6.0.4/gcc_64/include/QtSql/qsqldatabase.h \
 		../../../../Qt/6.0.4/gcc_64/include/QtSql/qtsqlglobal.h \
@@ -2084,26 +2053,6 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.0.4/gcc_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.0.4/gcc_64/include/QtCore/QString \
 		ui_mainwindow.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtCore/QVariant \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/QAction \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qaction.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QApplication \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qapplication.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtCore/qeventloop.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QLabel \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qlabel.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qframe.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtGui/qpicture.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QMenu \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qmenu.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QMenuBar \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qmenubar.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QStatusBar \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qstatusbar.h \
-		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QWidget \
 		../HoofdpijnAgenda/gebruikersgegevens.h \
 		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/QDialog \
 		../../../../Qt/6.0.4/gcc_64/include/QtWidgets/qdialog.h \

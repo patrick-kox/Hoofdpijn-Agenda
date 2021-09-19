@@ -37,8 +37,6 @@ void initializeDB(QSqlDatabase db) {
     // "CREATE TABLE Gebruikers(id INTEGER PRIMARY KEY AUTOINCREMENT, voornaam TEXT, achternaam TEXT, ... "
     // "CREATE TABLE Hoofdpijnen(id INTEGER PRIMARY KEY AUTOINCREMENT, gebruikers_id INT REFERENCE Gebruikers id, ernst INT, ... "
 
-    if (db.open())
-    {
         // Delete the database table with the users (if it exists).
         QString command = "DROP TABLE IF EXISTS Gebruikers;";
         QSqlQuery query(db);
@@ -92,14 +90,7 @@ void initializeDB(QSqlDatabase db) {
             db.close();
             exit(3);
         }
-    }
 
-    else
-    {
-        qDebug() << "Fout bij openen van databestand!";
-        db.close();
-        exit(1);
-    }
     // gebruiker toevoegen
     GebruikersGegevens *data = new GebruikersGegevens;
     qDebug() << "Toon gebruikersgegevens";

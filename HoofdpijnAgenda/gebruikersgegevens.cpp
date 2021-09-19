@@ -68,15 +68,15 @@ void GebruikersGegevens::on_buttonBox_accepted()
    int gebruikers = 0;
 
    // Open database file
-   QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-   db.setDatabaseName("Hoofdpijnen.sqlite3");
-   if (db.open())
+   QSqlDatabase gebruikers_db = QSqlDatabase::addDatabase("QSQLITE");
+   gebruikers_db.setDatabaseName("Hoofdpijnen.sqlite3");
+   if (gebruikers_db.open())
    {
         QString command = "SELECT * FROM Gebruikers";
-        QSqlQuery query(db);
+        QSqlQuery query(gebruikers_db);
         if (!query.exec(command)) {
             qDebug() << "Fout bij lezen gegevensbestand";
-            db.close();
+            gebruikers_db.close();
             exit(3);
         }
         else
@@ -108,6 +108,6 @@ void GebruikersGegevens::on_buttonBox_accepted()
 
         }
    }
-   db.close();
+   gebruikers_db.close();
 }
 

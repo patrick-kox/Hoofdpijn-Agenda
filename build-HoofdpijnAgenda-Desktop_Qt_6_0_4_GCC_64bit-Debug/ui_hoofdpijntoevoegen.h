@@ -10,6 +10,7 @@
 #define UI_HOOFDPIJNTOEVOEGEN_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QAbstractButton>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
@@ -59,6 +60,9 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(HoofdpijnToevoegen->sizePolicy().hasHeightForWidth());
         HoofdpijnToevoegen->setSizePolicy(sizePolicy);
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/images/site-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        HoofdpijnToevoegen->setWindowIcon(icon);
         HoofdpijnToevoegen->setModal(true);
         horizontalLayout = new QHBoxLayout(HoofdpijnToevoegen);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));

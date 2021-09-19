@@ -62,9 +62,7 @@ int main(int argc, char *argv[])
         if (!query.exec(command))
         {
             qDebug() << "Gegevensbestand wordt aangemaakt.";
-            db.close();
            initializeDB(db);
-           db.open();
         }
     }
     else
@@ -72,7 +70,6 @@ int main(int argc, char *argv[])
         qDebug() << "Fout bij openen van databestand!";
         exit(1);
     }
-
     MainWindow w;
     w.show();
     return a.exec();

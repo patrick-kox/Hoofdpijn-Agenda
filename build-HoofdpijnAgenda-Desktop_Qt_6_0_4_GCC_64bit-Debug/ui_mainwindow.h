@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -55,6 +56,9 @@ public:
         MainWindow->setSizePolicy(sizePolicy);
         MainWindow->setMinimumSize(QSize(800, 600));
         MainWindow->setMaximumSize(QSize(800, 600));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/images/HoofdpijnAgenda.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        MainWindow->setWindowIcon(icon);
         action_Gebruikers_Gegevens = new QAction(MainWindow);
         action_Gebruikers_Gegevens->setObjectName(QString::fromUtf8("action_Gebruikers_Gegevens"));
         action_Hoofdpijn_Toevoegen = new QAction(MainWindow);

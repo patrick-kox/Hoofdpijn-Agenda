@@ -10,6 +10,7 @@
 #define UI_GEBRUIKERSGEGEVENS_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QAbstractButton>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
@@ -50,6 +51,9 @@ public:
             GebruikersGegevens->setObjectName(QString::fromUtf8("GebruikersGegevens"));
         GebruikersGegevens->setWindowModality(Qt::WindowModal);
         GebruikersGegevens->resize(550, 401);
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/images/site-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        GebruikersGegevens->setWindowIcon(icon);
         GebruikersGegevens->setModal(true);
         verticalLayout = new QVBoxLayout(GebruikersGegevens);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
