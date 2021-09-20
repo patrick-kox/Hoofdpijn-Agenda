@@ -260,6 +260,16 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>inputVoornaam</tabstop>
+  <tabstop>inputAchternaam</tabstop>
+  <tabstop>inputGeslacht</tabstop>
+  <tabstop>inputStraat</tabstop>
+  <tabstop>inputNummer</tabstop>
+  <tabstop>inputGemeente</tabstop>
+  <tabstop>inputPostcode</tabstop>
+  <tabstop>inputLeeftijd</tabstop>
+ </tabstops>
  <resources>
   <include location="Resources.qrc"/>
  </resources>

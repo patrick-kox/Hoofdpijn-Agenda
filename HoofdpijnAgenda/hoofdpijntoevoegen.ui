@@ -9,12 +9,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1440</width>
-    <height>900</height>
+    <width>1447</width>
+    <height>973</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -42,7 +42,7 @@
          <property name="maximumSize">
           <size>
            <width>16777215</width>
-           <height>35</height>
+           <height>70</height>
           </size>
          </property>
          <property name="font">
@@ -64,17 +64,17 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="label_10">
+        <widget class="QLabel" name="lblErnstVanDeHoofdpijn">
          <property name="text">
           <string>Ernst van de Hoofdpijn</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QSpinBox" name="spinBox">
+        <widget class="QSpinBox" name="spnbxErnstVanDeHoofdpijn">
          <property name="maximumSize">
           <size>
-           <width>50</width>
+           <width>70</width>
            <height>35</height>
           </size>
          </property>
@@ -87,42 +87,42 @@
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QCheckBox" name="checkBox_2">
+        <widget class="QCheckBox" name="chkAanEenZijde">
          <property name="text">
           <string>Aan één zijde (L of R)</string>
          </property>
         </widget>
        </item>
        <item row="3" column="0">
-        <widget class="QCheckBox" name="checkBox">
+        <widget class="QCheckBox" name="chkKloppendeHoofdpijn">
          <property name="text">
           <string>Kloppende hoofdpijn</string>
          </property>
         </widget>
        </item>
        <item row="4" column="0">
-        <widget class="QCheckBox" name="checkBox_3">
+        <widget class="QCheckBox" name="chkHindertDagelijkseActiviteiten">
          <property name="text">
           <string>Hindert de dagelijkse activiteit</string>
          </property>
         </widget>
        </item>
        <item row="5" column="0">
-        <widget class="QCheckBox" name="checkBox_4">
+        <widget class="QCheckBox" name="chkVerergertMetBeweging">
          <property name="text">
           <string>Verergert met beweging</string>
          </property>
         </widget>
        </item>
        <item row="6" column="0">
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="lblAndereKenmerken">
          <property name="text">
-          <string>Andere:</string>
+          <string>Andere (preciseer)</string>
          </property>
         </widget>
        </item>
        <item row="6" column="1">
-        <widget class="QLineEdit" name="lineEdit">
+        <widget class="QLineEdit" name="inputAndereKenmerken">
          <property name="minimumSize">
           <size>
            <width>250</width>
@@ -138,7 +138,13 @@
         </widget>
        </item>
        <item row="7" column="0">
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="lblSymptomenDieDeHoofdpijnBegeleiden">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>70</height>
+          </size>
+         </property>
          <property name="font">
           <font>
            <family>Sans Serif</family>
@@ -162,37 +168,84 @@ begeleiden</string>
          </property>
         </widget>
        </item>
-      </layout>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QGridLayout" name="gridLayout_5">
-     <item row="0" column="0">
-      <layout class="QFormLayout" name="formLayout_6">
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_4">
+       <item row="8" column="0">
+        <widget class="QCheckBox" name="chkBraakneigingen">
          <property name="text">
-          <string>TextLabel</string>
+          <string>Braakneigingen</string>
          </property>
         </widget>
        </item>
-      </layout>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QGridLayout" name="gridLayout_6">
-     <item row="0" column="0">
-      <layout class="QFormLayout" name="formLayout_10">
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_5">
+       <item row="9" column="0">
+        <widget class="QCheckBox" name="chkBrakenOvergeven">
          <property name="text">
-          <string>TextLabel</string>
+          <string>Braken / Overgeven</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="0">
+       <item row="10" column="0">
+        <widget class="QCheckBox" name="chkOvergevoeligVoorLicht">
+         <property name="text">
+          <string>Overgevoelig voor licht</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QCheckBox" name="chkOvergevoeligVoorGeluid">
+         <property name="text">
+          <string>Overgevoelig voor Geluid</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="lblKlachtenBijHetBEGINVanDeAanval">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Klachten bij het BEGIN 
+van de aanval</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QCheckBox" name="chkStoornissenVanHetZicht">
+         <property name="text">
+          <string>Stoornissen van het zicht (L of R)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QCheckBox" name="chkTintelingen">
+         <property name="text">
+          <string>Tintelingen (L of R)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="0">
+        <widget class="QCheckBox" name="chkSpraakstoornissen">
+         <property name="text">
+          <string>Spraakstoornissen</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <widget class="QCheckBox" name="chkDoofGevoel">
+         <property name="text">
+          <string>Doof gevoel (L of R) (handen/gelaat)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="1">
         <widget class="QDialogButtonBox" name="buttonBox">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -206,8 +259,285 @@ begeleiden</string>
      </item>
     </layout>
    </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="0">
+      <layout class="QFormLayout" name="formLayout_6">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblUitlokkendeFactoren">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Uitlokkende factoren</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="chkMaandstonden">
+         <property name="text">
+          <string>Maandstonden</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="chkVerminderingVanLevensritme">
+         <property name="text">
+          <string>Vermindering van levensritme</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="chkVoedingsstoffenOfDrank">
+         <property name="text">
+          <string>Voedingsstoffen of drank</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="chkStress">
+         <property name="text">
+          <string>Stress</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="lblAndereTriggers">
+         <property name="text">
+          <string>Andere (preciseer)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="inputAndereTriggers"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="lblIngenomenMedicatie">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ingenomen medicatie</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="lblIngenomenMedicatieDetails">
+         <property name="text">
+          <string>(naam, aantal, eenheden, toegediende vorm)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="lblGeneesmiddel1">
+         <property name="text">
+          <string>1ste geneesmiddel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="inputGeneesmiddel1"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="lblGeneesmiddel2">
+         <property name="text">
+          <string>2de geneesmiddel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="inputGeneesmiddel2"/>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="lblGeneesmiddel3">
+         <property name="text">
+          <string>3de geneesmiddel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLineEdit" name="inputGeneesmiddel3"/>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="lblGeneesmiddel4">
+         <property name="text">
+          <string>4de geneesmiddel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLineEdit" name="inputGeneesmiddel4"/>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="lblInvloedOpDeActiviteiten">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Invloed op de activiteiten</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="lblTijdelijkOphoudenMetWerken">
+         <property name="text">
+          <string>Tijdelijk ophouden met werken (dagen)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QSpinBox" name="spnTijdelijkOphoudenMetWerken">
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="maximum">
+          <number>31</number>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QCheckBox" name="chkVerstoordFamiliaalLeven">
+         <property name="text">
+          <string>Verstoord familiaal leven</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QCheckBox" name="chkVerstoordeVrijetijdsactiviteiten">
+         <property name="text">
+          <string>Verstoorde vrijetijdsactiviteiten</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <widget class="QLabel" name="lblDuurVanDeAanval">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Duur van de aanval</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="0">
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>Aantal uren of dagen</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="1">
+        <widget class="QLineEdit" name="inputDuurVanDeAanval"/>
+       </item>
+       <item row="17" column="0">
+        <widget class="QLabel" name="lblDatumVanDeAanval">
+         <property name="text">
+          <string>Datum van de aanval</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="1">
+        <widget class="QDateEdit" name="dateDatumVanDeAanval">
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2000</year>
+           <month>1</month>
+           <day>1</day>
+          </datetime>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>spnbxErnstVanDeHoofdpijn</tabstop>
+  <tabstop>chkAanEenZijde</tabstop>
+  <tabstop>chkKloppendeHoofdpijn</tabstop>
+  <tabstop>chkHindertDagelijkseActiviteiten</tabstop>
+  <tabstop>chkVerergertMetBeweging</tabstop>
+  <tabstop>inputAndereKenmerken</tabstop>
+  <tabstop>chkBraakneigingen</tabstop>
+  <tabstop>chkBrakenOvergeven</tabstop>
+  <tabstop>chkOvergevoeligVoorLicht</tabstop>
+  <tabstop>chkOvergevoeligVoorGeluid</tabstop>
+  <tabstop>chkStoornissenVanHetZicht</tabstop>
+  <tabstop>chkTintelingen</tabstop>
+  <tabstop>chkDoofGevoel</tabstop>
+  <tabstop>chkSpraakstoornissen</tabstop>
+  <tabstop>chkMaandstonden</tabstop>
+  <tabstop>chkVerminderingVanLevensritme</tabstop>
+  <tabstop>chkVoedingsstoffenOfDrank</tabstop>
+  <tabstop>chkStress</tabstop>
+  <tabstop>inputAndereTriggers</tabstop>
+  <tabstop>inputGeneesmiddel1</tabstop>
+  <tabstop>inputGeneesmiddel2</tabstop>
+  <tabstop>inputGeneesmiddel3</tabstop>
+  <tabstop>inputGeneesmiddel4</tabstop>
+  <tabstop>spnTijdelijkOphoudenMetWerken</tabstop>
+  <tabstop>chkVerstoordFamiliaalLeven</tabstop>
+  <tabstop>chkVerstoordeVrijetijdsactiviteiten</tabstop>
+  <tabstop>inputDuurVanDeAanval</tabstop>
+ </tabstops>
  <resources>
   <include location="Resources.qrc"/>
  </resources>

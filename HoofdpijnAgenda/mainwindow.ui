@@ -124,7 +124,6 @@
    <addaction name="menu_Rapporten"/>
    <addaction name="menuH_ulp"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="action_Gebruikers_Gegevens">
    <property name="text">
     <string>&amp;Gebruikers Gegevens</string>

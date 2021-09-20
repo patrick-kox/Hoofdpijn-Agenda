@@ -173,6 +173,13 @@ public:
 
         verticalLayout->addWidget(buttonBox);
 
+        QWidget::setTabOrder(inputVoornaam, inputAchternaam);
+        QWidget::setTabOrder(inputAchternaam, inputGeslacht);
+        QWidget::setTabOrder(inputGeslacht, inputStraat);
+        QWidget::setTabOrder(inputStraat, inputNummer);
+        QWidget::setTabOrder(inputNummer, inputGemeente);
+        QWidget::setTabOrder(inputGemeente, inputPostcode);
+        QWidget::setTabOrder(inputPostcode, inputLeeftijd);
 
         retranslateUi(GebruikersGegevens);
         QObject::connect(buttonBox, &QDialogButtonBox::accepted, GebruikersGegevens, qOverload<>(&QDialog::accept));
