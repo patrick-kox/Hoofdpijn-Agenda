@@ -75,6 +75,8 @@ void GebruikersGegevens::leesGegevens() {
         qDebug() << "Fout bij openen van databestand!";
         exit(1);
     }
+    // db.close();
+    // QSqlDatabase::removeDatabase( QSqlDatabase::defaultConnection );
 }
 
 
@@ -133,6 +135,7 @@ void GebruikersGegevens::on_buttonBox_accepted()
 
         }
    }
-   gebruikers_db.close();
+   // gebruikers_db.close();
+   // QSqlDatabase::removeDatabase( QSqlDatabase::defaultConnection );
 }
 

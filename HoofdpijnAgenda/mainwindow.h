@@ -45,6 +45,10 @@ private slots:
 
     void on_action_Hoofdpijn_Toevoegen_triggered();
 
+    void on_actionToon_meest_Recente_Hoofdpijn_Aanvallen_triggered();
+
+    void on_actionToon_Alle_Hoofdpijn_Aanvallen_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

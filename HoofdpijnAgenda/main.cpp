@@ -63,6 +63,13 @@ int main(int argc, char *argv[])
         {
             qDebug() << "Gegevensbestand wordt aangemaakt.";
            initializeDB(db);
+           query.clear();
+           db.close();
+        }
+        else
+        {
+            query.clear();
+            db.close();
         }
     }
     else
@@ -70,6 +77,7 @@ int main(int argc, char *argv[])
         qDebug() << "Fout bij openen van databestand!";
         exit(1);
     }
+    QSqlDatabase::removeDatabase(QSqlDatabase::defaultConnection);
     MainWindow w;
     w.show();
     return a.exec();

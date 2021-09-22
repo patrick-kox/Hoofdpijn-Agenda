@@ -26,6 +26,7 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 #include <QtSql>
 #include <QSqlQuery>
 #include <QDateTime>
+#include <QMessageBox>
 
 HoofdpijnToevoegen::HoofdpijnToevoegen(QWidget *parent) :
     QDialog(parent),
@@ -91,70 +92,68 @@ void HoofdpijnToevoegen::on_buttonBox_accepted()
    QString duurVanDeAanval = ui->inputDuurVanDeAanval->text();
    QDate datumVanDeAanval = ui->dateDatumVanDeAanval->date();
 
-   // qDebug output (to shut-up the "unused variable error messages during design"
-   qDebug() << "Ernst van de hoofdpijn is ingesteld op: " << ernst;
-   qDebug() << " ";
-   qDebug() << "Eenzijdig is: " << aanEenZijde;
-   qDebug() << "Is de hoofdpijn kloppende: " << kloppendeHoofdpijn;
-   qDebug() << "Hindert de hoofdpijn de dagelijkse activiteiten: " << hindertDeDagelijkseActiviteit;
-   qDebug() << "Verergert de hoofdpijn met beweging: " << verergertMetBeweging;
-   qDebug() << "Zijn er andere kenmerken: " << andereKenmerken;
-   qDebug() << " ";
-   qDebug() << "Braakneigingen: " << braakneigingen;
-   qDebug() << "Braken / overgeven: " << brakenOvergeven;
-   qDebug() << "Overgevoelig voor Licht: " << overgevoeligVoorLicht;
-   qDebug() << "Overgevoelig voor Geluid: " << overgevoeligVoorGeluid;
-   qDebug() << "";
-   qDebug() << "Stoornissen van het zicht:" << stoornissenVanHetZicht;
-   qDebug() << "Tintelingen: " << tintelingen;
-   qDebug() << "doof gevoel: " << doofGevoel;
-   qDebug() << "spraakstoornissen: " << spraakstoornissen;
-   qDebug() << "";
-   qDebug() << "maandstonden: " << maandstonden;
-   qDebug() << "vermindering van levensritme: " << verminderingVanLevensritme;
-   qDebug() << "voedingsstoffen of drank: " << voedingsstoffenOfDrank;
-   qDebug() << "stress: " << stress;
-   qDebug() << "andere triggers: " << andereTriggers;
-   qDebug() << " ";
-   qDebug() << "Ingenomen medicatie:";
-   qDebug() << geneesmiddel_1;
-   qDebug() << geneesmiddel_2;
-   qDebug() << geneesmiddel_3;
-   qDebug() << geneesmiddel_4;
-   qDebug() << " ";
-   qDebug() << "Tijdelijk ophouden met werken: " << tijdelijkOphoudenMetWerken;
-   qDebug() << "Verstoord familiaal leven: " << verstoordFamiliaalLeven;
-   qDebug() << "Verstoorde vrijetijdsactiviteiten: " << verstoordeVrijetijdsactiviteiten;
-   qDebug() << " ";
-   qDebug() << "Duur van de Aanval: " << duurVanDeAanval;
-   qDebug() << "Datum van de Aanval: " << datumVanDeAanval;
-
    // Open database file and add the headache
    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
    db.setDatabaseName("Hoofdpijnen.sqlite3");
-   if (db.open())
-   {
-       qDebug() << "Databestand hoofdpijnen.sqlite3 geopend.";
-       QString command = "SELECT * FROM Gebruikers";
-       QSqlQuery query(db);
-       if (!query.exec(command))
-       {
-           qDebug() << "Hoofdpijn wordt toegevoegd";
-
-           query.prepare("INSERT INTO Gebruikers (gebruikers_id, ernst, enkelzijdig, kloppend, hindertDagelijkseActiviteiten, ergerBijBeweging, andereKenmerken, braakneigingen, braken, overgevoeligVoorLicht, overgevoeligVoorGeluid, stoornissenVanHetZicht, tintelingen, doofGevoel, spraakstoornissen, maandstonden, verminderingVanLevensritme, voedingsstoffenOfDrank, stress, andereTriggers, geneesmiddel_1, geneesmiddel_2, geneesmiddel_3, geneesmiddel_4, tijdelijkOphoudenMetWerken, verstoordFamiliaalLeven, verstoordeVrijetijdsbesteding, duurVanDeAanval, datum)"
-               "values(:gebruikers_id,:ernst,:enkelzijdig,:kloppend, :hindertDagelijkseActiviteiten, :ergerBijBeweging, :andereKenmerken, :braakneigingen, :braken, :overgevoeligVoorLicht, :overgevoeligVoorGeluid, :stoornissenVanHetZicht, :tintelingen, :doofGevoel, :spraakstoornissen, :maandstonden, :verminderingVanLevensritme, :voedingsstoffenOfDrank, :stress, :andereTriggers, :geneesmiddel_1, :geneesmiddel_2, :geneesmiddel_3, :geneesmiddel_4, :tijdelijkOphoudenMetWerken, :verstoordFamiliaalLeven, :verstoordeVrijetijdsbesteding, :duurVanDeAanval, :datum)");
-               query.bindValue(":gebruikers_id",1);
-               query.bindValue(":ernst",ernst);
-               query.bindValue(":kloppend", kloppendeHoofdpijn);
-               query.bindValue(":hindertDagelijkseActiviteiten", hindertDeDagelijkseActiviteit);
-
+       db.open();
+       QSqlQuery sql;
+       if(db.isValid()) {
+           if(db.tables().isEmpty()) {
+           qDebug() << "Databestand beschadigd!";
+           exit(3);
        }
-   }
-   else
-   {
-       qDebug() << "Fout bij openen van databestand!";
-       db.close();
-       exit(1);
-   }
+           sql.prepare("INSERT INTO Hoofdpijnen (gebruikers_id, ernst, enkelzijdig, kloppend, hindertDagelijkseActiviteiten, ergerBijBeweging, andereKenmerken, braakneigingen, braken, "
+                                    "overgevoeligVoorLicht, overgevoeligVoorGeluid, stoornissenVanHetZicht, tintelingen, doofGevoel, spraakstoornissen, maandstonden, verminderingVanLevensritme, "
+                                    "voedingsstoffenOfDrank, stress, andereTriggers, geneesmiddel_1, geneesmiddel_2, geneesmiddel_3, geneesmiddel_4, tijdelijkOphoudenMetWerken, verstoordFamiliaalLeven, "
+                                    "verstoordeVrijetijdsbesteding, duurVanDeAanval, datum)"
+                          "values(:gebruikers_id,:ernst,:enkelzijdig,:kloppend, :hindertDagelijkseActiviteiten, :ergerBijBeweging, :andereKenmerken, :braakneigingen, :braken, :overgevoeligVoorLicht, "
+                                    ":overgevoeligVoorGeluid, :stoornissenVanHetZicht, :tintelingen, :doofGevoel, :spraakstoornissen, :maandstonden, :verminderingVanLevensritme, :voedingsstoffenOfDrank, :stress, "
+                                    ":andereTriggers, :geneesmiddel_1, :geneesmiddel_2, :geneesmiddel_3, :geneesmiddel_4, :tijdelijkOphoudenMetWerken, :verstoordFamiliaalLeven, :verstoordeVrijetijdsbesteding, "
+                                    ":duurVanDeAanval, :datum)");
+                          sql.bindValue(":gebruikers_id",1);
+                          sql.bindValue(":ernst",ernst);
+                          sql.bindValue(":enkelzijdig", aanEenZijde);
+                          sql.bindValue(":kloppend", kloppendeHoofdpijn);
+                          sql.bindValue(":hindertDagelijkseActiviteiten", hindertDeDagelijkseActiviteit);
+                          sql.bindValue(":ergerBijBeweging", verergertMetBeweging);
+                          sql.bindValue(":andereKenmerken", andereKenmerken);
+                          sql.bindValue(":braakneigingen", braakneigingen);
+                          sql.bindValue(":braken",brakenOvergeven);
+                          sql.bindValue(":overgevoeligVoorLicht", overgevoeligVoorLicht);
+                          sql.bindValue(":overgevoeligVoorGeluid", overgevoeligVoorGeluid);
+                          sql.bindValue(":stoornissenVanHetZicht", stoornissenVanHetZicht);
+                          sql.bindValue(":tintelingen", tintelingen);
+                          sql.bindValue(":doofGevoel",doofGevoel);
+                          sql.bindValue(":spraakstoornissen", spraakstoornissen);
+                          sql.bindValue(":maandstonden", maandstonden);
+                          sql.bindValue(":verminderingVanLevensritme", verminderingVanLevensritme);
+                          sql.bindValue(":voedingsstoffenOfDrank", voedingsstoffenOfDrank);
+                          sql.bindValue(":stress", stress);
+                          sql.bindValue(":andereTriggers", andereTriggers);
+                          sql.bindValue(":geneesmiddel_1", geneesmiddel_1);
+                          sql.bindValue(":geneesmiddel_2", geneesmiddel_2);
+                          sql.bindValue(":geneesmiddel_3", geneesmiddel_3);
+                          sql.bindValue(":geneesmiddel_4", geneesmiddel_4);
+                          sql.bindValue(":tijdelijkOphoudenMetWerken", tijdelijkOphoudenMetWerken);
+                          sql.bindValue(":verstoordFamiliaalLeven", verstoordFamiliaalLeven);
+                          sql.bindValue(":verstoordeVrijetijdsbesteding", verstoordeVrijetijdsactiviteiten);
+                          sql.bindValue(":duurVanDeAanval", duurVanDeAanval);
+                          sql.bindValue(":datum", datumVanDeAanval);
+
+                          if(sql.exec()){
+                              QMessageBox msgBox;
+                              msgBox.setText("De hoofdpijnaanval is opgeslagen.");
+                              msgBox.exec();
+                          }
+                          else {
+                              qDebug() << "Er is een fout opgetreden bij het opslaan van de Hoofdpijnaanval";
+                              exit(3);
+                          }
+       }
+       else
+       {
+           qDebug() << "Kan gegevensbestand niet openen!";
+           exit(3);
+       }
 }
 

@@ -6,27 +6,33 @@ CONFIG += c++11
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
-#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
     Hoofdpijnen.cpp \
+    allehoofdpijnaanvallen.cpp \
     gebruikersgegevens.cpp \
     hoofdpijntoevoegen.cpp \
     initializeDB.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    recentehoofdpijnaanvallen.cpp
 
 HEADERS += \
     Hoofdpijnen.h \
+    allehoofdpijnaanvallen.h \
     gebruikersgegevens.h \
     hoofdpijntoevoegen.h \
     initializeDB.h \
-    mainwindow.h
+    mainwindow.h \
+    recentehoofdpijnaanvallen.h
 
 FORMS += \
+    allehoofdpijnaanvallen.ui \
     gebruikersgegevens.ui \
     hoofdpijntoevoegen.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    recentehoofdpijnaanvallen.ui
 
 TRANSLATIONS += \
     HoofdpijnAgenda_nl_BE.ts \
