@@ -49,6 +49,12 @@ private slots:
 
     void on_actionToon_Alle_Hoofdpijn_Aanvallen_triggered();
 
+    void on_action_Gegevensbestand_Herstellen_triggered();
+
+    void on_action_Help_triggered();
+
+    void on_action_Informatie_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -25,6 +25,9 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 #include "hoofdpijntoevoegen.h"
 #include "recentehoofdpijnaanvallen.h"
 #include "allehoofdpijnaanvallen.h"
+#include "help.h"
+#include "over.h"
+#include "initializeDB.h"
 
 #include <QSqlDatabase>
 
@@ -76,5 +79,27 @@ void MainWindow::on_actionToon_Alle_Hoofdpijn_Aanvallen_triggered()
     AlleHoofdpijnAanvallen *aanvallen = new AlleHoofdpijnAanvallen;
     qDebug() << "Toon alle hoofdpijnaanvallen";
     aanvallen->show();
+}
+
+
+void MainWindow::on_action_Gegevensbestand_Herstellen_triggered()
+{
+    initializeDB();
+}
+
+
+void MainWindow::on_action_Help_triggered()
+{
+    Help *help = new Help;
+    qDebug() << "Toon help venster";
+    help->show();
+}
+
+
+void MainWindow::on_action_Informatie_triggered()
+{
+   Over *over = new Over;
+   qDebug() << "Toon 'about' venster";
+   over->show();
 }
 

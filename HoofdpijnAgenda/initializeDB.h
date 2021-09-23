@@ -25,6 +25,7 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 #include <QSqlDatabase>
 
 
+void initializeDB();
 void initializeDB(QSqlDatabase db);
 
 #endif // INITIALIZEDB_H

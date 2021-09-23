@@ -12,26 +12,32 @@ SOURCES += \
     Hoofdpijnen.cpp \
     allehoofdpijnaanvallen.cpp \
     gebruikersgegevens.cpp \
+    help.cpp \
     hoofdpijntoevoegen.cpp \
     initializeDB.cpp \
     main.cpp \
     mainwindow.cpp \
+    over.cpp \
     recentehoofdpijnaanvallen.cpp
 
 HEADERS += \
     Hoofdpijnen.h \
     allehoofdpijnaanvallen.h \
     gebruikersgegevens.h \
+    help.h \
     hoofdpijntoevoegen.h \
     initializeDB.h \
     mainwindow.h \
+    over.h \
     recentehoofdpijnaanvallen.h
 
 FORMS += \
     allehoofdpijnaanvallen.ui \
     gebruikersgegevens.ui \
+    help.ui \
     hoofdpijntoevoegen.ui \
     mainwindow.ui \
+    over.ui \
     recentehoofdpijnaanvallen.ui
 
 TRANSLATIONS += \
