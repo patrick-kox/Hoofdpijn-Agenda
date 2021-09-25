@@ -86,7 +86,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>27</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuBestand">
@@ -119,9 +119,16 @@
      <string>&amp;Rapporten</string>
     </property>
    </widget>
+   <widget class="QMenu" name="menuGrafieken">
+    <property name="title">
+     <string>&amp;Grafieken</string>
+    </property>
+    <addaction name="action_Ernst"/>
+   </widget>
    <addaction name="menuBestand"/>
-   <addaction name="menuHulpmiddelen"/>
+   <addaction name="menuGrafieken"/>
    <addaction name="menu_Rapporten"/>
+   <addaction name="menuHulpmiddelen"/>
    <addaction name="menuH_ulp"/>
   </widget>
   <action name="action_Gebruikers_Gegevens">
@@ -136,12 +143,12 @@
   </action>
   <action name="actionToon_meest_Recente_Hoofdpijn_Aanvallen">
    <property name="text">
-    <string>Toon meest &amp;Recente Hoofdpijn Aanvallen</string>
+    <string>&amp;Recente Hoofdpijnen</string>
    </property>
   </action>
   <action name="actionToon_Alle_Hoofdpijn_Aanvallen">
    <property name="text">
-    <string>&amp;Toon Alle Hoofdpijn Aanvallen</string>
+    <string>Alle &amp;Hoofdpijnen</string>
    </property>
   </action>
   <action name="action_Afsluiten">
@@ -156,17 +163,27 @@
   </action>
   <action name="action_Informatie">
    <property name="text">
-    <string>&amp;Informatie</string>
+    <string>&amp;Over</string>
    </property>
   </action>
   <action name="action_Gegevensbestand_Herstellen">
    <property name="text">
-    <string>&amp;Gegevensbestand Herstellen</string>
+    <string>&amp;Gegevens Herstellen</string>
    </property>
   </action>
   <action name="actionGegevens_Exporteren">
    <property name="text">
     <string>Gegevens &amp;Exporteren</string>
+   </property>
+  </action>
+  <action name="action_Ernst_van_de_hoofdpijnen">
+   <property name="text">
+    <string>&amp;Ernst van de hoofdpijnen</string>
+   </property>
+  </action>
+  <action name="action_Ernst">
+   <property name="text">
+    <string>&amp;Ernst</string>
    </property>
   </action>
  </widget>

@@ -18,6 +18,7 @@ RecenteHoofdpijnaanvallen::RecenteHoofdpijnaanvallen(QWidget *parent) :
     ui->tableRecenteAanvallen->setColumnCount(28);
 
     // Define column header texts
+    /*
     QTableWidgetItem* datum = new QTableWidgetItem(QString("Datum"),QTableWidgetItem::Type);
     QTableWidgetItem* ernst = new QTableWidgetItem(QString("Ernst"),QTableWidgetItem::Type);
     QTableWidgetItem* enkelzijdig = new QTableWidgetItem(QString("Aan één zijde"),QTableWidgetItem::Type);
@@ -45,6 +46,37 @@ RecenteHoofdpijnaanvallen::RecenteHoofdpijnaanvallen(QWidget *parent) :
     QTableWidgetItem* tijdelijkOphoudenMetWerken = new QTableWidgetItem(QString("Tijd. oph. werken"),QTableWidgetItem::Type);
     QTableWidgetItem* verstoordFamLeven = new QTableWidgetItem(QString("Verstoord fam. leven"),QTableWidgetItem::Type);
     QTableWidgetItem* verstoordeVrijetijd = new QTableWidgetItem(QString("Verstoorde vrijetijdsbest."),QTableWidgetItem::Type);
+    QTableWidgetItem* duurVanDeAanval = new QTableWidgetItem(QString("Aantal uren of dagen"),QTableWidgetItem::Type);
+    */
+
+    // Set short column headers
+    QTableWidgetItem* datum = new QTableWidgetItem(QString("Datum"),QTableWidgetItem::Type);
+    QTableWidgetItem* ernst = new QTableWidgetItem(QString("Ernst"),QTableWidgetItem::Type);
+    QTableWidgetItem* enkelzijdig = new QTableWidgetItem(QString("U"),QTableWidgetItem::Type);
+    QTableWidgetItem* kloppend = new QTableWidgetItem(QString("K"),QTableWidgetItem::Type);
+    QTableWidgetItem* hindertDagAct = new QTableWidgetItem(QString("H"),QTableWidgetItem::Type);
+    QTableWidgetItem* verergertMBeweging = new QTableWidgetItem(QString("V"), QTableWidgetItem::Type);
+    QTableWidgetItem* andereKenmerken = new QTableWidgetItem(QString("Andere kenmerken"),QTableWidgetItem::Type);
+    QTableWidgetItem* braakneigingen = new QTableWidgetItem(QString("N"), QTableWidgetItem::Type);
+    QTableWidgetItem* braken = new QTableWidgetItem(QString("O"),QTableWidgetItem::Type);
+    QTableWidgetItem* overgevoeligLicht = new QTableWidgetItem(QString("L"),QTableWidgetItem::Type);
+    QTableWidgetItem* overgevoeligGeluid = new QTableWidgetItem(QString("B"), QTableWidgetItem::Type);
+    QTableWidgetItem* stoornissenZicht = new QTableWidgetItem(QString("S"), QTableWidgetItem::Type);
+    QTableWidgetItem* tintelingen = new QTableWidgetItem(QString("T"),QTableWidgetItem::Type);
+    QTableWidgetItem* doofGevoel = new QTableWidgetItem(QString("D"),QTableWidgetItem::Type);
+    QTableWidgetItem* spraakstoornissen = new QTableWidgetItem(QString("P"),QTableWidgetItem::Type);
+    QTableWidgetItem* maandstonden = new QTableWidgetItem(QString("R"),QTableWidgetItem::Type);
+    QTableWidgetItem* verminderingLevens = new QTableWidgetItem(QString("C"),QTableWidgetItem::Type);
+    QTableWidgetItem* voedingOfDrank = new QTableWidgetItem(QString("V"),QTableWidgetItem::Type);
+    QTableWidgetItem* stress = new QTableWidgetItem(QString("S"),QTableWidgetItem::Type);
+    QTableWidgetItem* andereTriggers = new QTableWidgetItem(QString("Andere Triggers"),QTableWidgetItem::Type);
+    QTableWidgetItem* geneesmiddel_1 = new QTableWidgetItem(QString("Eerste geneesmiddel"),QTableWidgetItem::Type);
+    QTableWidgetItem* geneesmiddel_2 = new QTableWidgetItem(QString("Tweede geneesmiddel"),QTableWidgetItem::Type);
+    QTableWidgetItem* geneesmiddel_3 = new QTableWidgetItem(QString("Derde geneesmidel"),QTableWidgetItem::Type);
+    QTableWidgetItem* geneesmiddel_4 = new QTableWidgetItem(QString("Vierde geneesmiddel"),QTableWidgetItem::Type);
+    QTableWidgetItem* tijdelijkOphoudenMetWerken = new QTableWidgetItem(QString("J"),QTableWidgetItem::Type);
+    QTableWidgetItem* verstoordFamLeven = new QTableWidgetItem(QString("F"),QTableWidgetItem::Type);
+    QTableWidgetItem* verstoordeVrijetijd = new QTableWidgetItem(QString("L"),QTableWidgetItem::Type);
     QTableWidgetItem* duurVanDeAanval = new QTableWidgetItem(QString("Aantal uren of dagen"),QTableWidgetItem::Type);
 
 
@@ -77,7 +109,6 @@ RecenteHoofdpijnaanvallen::RecenteHoofdpijnaanvallen(QWidget *parent) :
     ui->tableRecenteAanvallen->setHorizontalHeaderItem(25, verstoordFamLeven);
     ui->tableRecenteAanvallen->setHorizontalHeaderItem(26, verstoordeVrijetijd);
     ui->tableRecenteAanvallen->setHorizontalHeaderItem(27, duurVanDeAanval);
-
 
     // Set resize to make the columns fit their content
     for (int i = 0; i < 29; i++) {

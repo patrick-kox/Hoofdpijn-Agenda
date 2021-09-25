@@ -24,7 +24,19 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 
 #include <QMainWindow>
 #include <QVector>
+#include <QMessageBox>
+#include <QSqlDatabase>
+
 #include "Hoofdpijnen.h"
+#include "ui_mainwindow.h"
+#include "gebruikersgegevens.h"
+#include "hoofdpijntoevoegen.h"
+#include "recentehoofdpijnaanvallen.h"
+#include "allehoofdpijnaanvallen.h"
+#include "help.h"
+#include "over.h"
+#include "initializeDB.h"
+#include "ernstgrafiek.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow;}
@@ -54,6 +66,10 @@ private slots:
     void on_action_Help_triggered();
 
     void on_action_Informatie_triggered();
+
+    void on_actionGegevens_Exporteren_triggered();
+
+    void on_action_Ernst_triggered();
 
 private:
     Ui::MainWindow *ui;

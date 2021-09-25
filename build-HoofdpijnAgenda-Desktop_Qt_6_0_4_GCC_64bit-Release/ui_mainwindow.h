@@ -33,6 +33,8 @@ public:
     QAction *action_Informatie;
     QAction *action_Gegevensbestand_Herstellen;
     QAction *actionGegevens_Exporteren;
+    QAction *action_Ernst_van_de_hoofdpijnen;
+    QAction *action_Ernst;
     QWidget *centralwidget;
     QLabel *Background;
     QLabel *label;
@@ -41,6 +43,7 @@ public:
     QMenu *menuHulpmiddelen;
     QMenu *menuH_ulp;
     QMenu *menu_Rapporten;
+    QMenu *menuGrafieken;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -75,6 +78,10 @@ public:
         action_Gegevensbestand_Herstellen->setObjectName(QString::fromUtf8("action_Gegevensbestand_Herstellen"));
         actionGegevens_Exporteren = new QAction(MainWindow);
         actionGegevens_Exporteren->setObjectName(QString::fromUtf8("actionGegevens_Exporteren"));
+        action_Ernst_van_de_hoofdpijnen = new QAction(MainWindow);
+        action_Ernst_van_de_hoofdpijnen->setObjectName(QString::fromUtf8("action_Ernst_van_de_hoofdpijnen"));
+        action_Ernst = new QAction(MainWindow);
+        action_Ernst->setObjectName(QString::fromUtf8("action_Ernst"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         Background = new QLabel(centralwidget);
@@ -93,7 +100,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 27));
+        menubar->setGeometry(QRect(0, 0, 800, 20));
         menuBestand = new QMenu(menubar);
         menuBestand->setObjectName(QString::fromUtf8("menuBestand"));
         menuHulpmiddelen = new QMenu(menubar);
@@ -102,12 +109,15 @@ public:
         menuH_ulp->setObjectName(QString::fromUtf8("menuH_ulp"));
         menu_Rapporten = new QMenu(menubar);
         menu_Rapporten->setObjectName(QString::fromUtf8("menu_Rapporten"));
+        menuGrafieken = new QMenu(menubar);
+        menuGrafieken->setObjectName(QString::fromUtf8("menuGrafieken"));
         MainWindow->setMenuBar(menubar);
 
         menubar->addAction(menuBestand->menuAction());
-        menubar->addAction(menuHulpmiddelen->menuAction());
         menubar->addAction(menu_Rapporten->menuAction());
+        menubar->addAction(menuHulpmiddelen->menuAction());
         menubar->addAction(menuH_ulp->menuAction());
+        menubar->addAction(menuGrafieken->menuAction());
         menuBestand->addAction(action_Gebruikers_Gegevens);
         menuBestand->addAction(action_Hoofdpijn_Toevoegen);
         menuBestand->addAction(actionToon_meest_Recente_Hoofdpijn_Aanvallen);
@@ -118,6 +128,7 @@ public:
         menuHulpmiddelen->addAction(action_Gegevensbestand_Herstellen);
         menuH_ulp->addAction(action_Help);
         menuH_ulp->addAction(action_Informatie);
+        menuGrafieken->addAction(action_Ernst);
 
         retranslateUi(MainWindow);
 
@@ -129,19 +140,22 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Hoofdpijn Agenda", nullptr));
         action_Gebruikers_Gegevens->setText(QCoreApplication::translate("MainWindow", "&Gebruikers Gegevens", nullptr));
         action_Hoofdpijn_Toevoegen->setText(QCoreApplication::translate("MainWindow", "&Hoofdpijn Toevoegen", nullptr));
-        actionToon_meest_Recente_Hoofdpijn_Aanvallen->setText(QCoreApplication::translate("MainWindow", "Toon meest &Recente Hoofdpijn Aanvallen", nullptr));
-        actionToon_Alle_Hoofdpijn_Aanvallen->setText(QCoreApplication::translate("MainWindow", "&Toon Alle Hoofdpijn Aanvallen", nullptr));
+        actionToon_meest_Recente_Hoofdpijn_Aanvallen->setText(QCoreApplication::translate("MainWindow", "&Recente Hoofdpijnen", nullptr));
+        actionToon_Alle_Hoofdpijn_Aanvallen->setText(QCoreApplication::translate("MainWindow", "Alle &Hoofdpijnen", nullptr));
         action_Afsluiten->setText(QCoreApplication::translate("MainWindow", "&Afsluiten", nullptr));
         action_Help->setText(QCoreApplication::translate("MainWindow", "&Help", nullptr));
-        action_Informatie->setText(QCoreApplication::translate("MainWindow", "&Informatie", nullptr));
-        action_Gegevensbestand_Herstellen->setText(QCoreApplication::translate("MainWindow", "&Gegevensbestand Herstellen", nullptr));
+        action_Informatie->setText(QCoreApplication::translate("MainWindow", "&Over", nullptr));
+        action_Gegevensbestand_Herstellen->setText(QCoreApplication::translate("MainWindow", "&Gegevens Herstellen", nullptr));
         actionGegevens_Exporteren->setText(QCoreApplication::translate("MainWindow", "Gegevens &Exporteren", nullptr));
+        action_Ernst_van_de_hoofdpijnen->setText(QCoreApplication::translate("MainWindow", "&Ernst van de hoofdpijnen", nullptr));
+        action_Ernst->setText(QCoreApplication::translate("MainWindow", "&Ernst", nullptr));
         Background->setText(QString());
         label->setText(QCoreApplication::translate("MainWindow", "Hoofdpijn Agenda", nullptr));
         menuBestand->setTitle(QCoreApplication::translate("MainWindow", "&Bestand", nullptr));
         menuHulpmiddelen->setTitle(QCoreApplication::translate("MainWindow", "&Hulpmiddellen", nullptr));
         menuH_ulp->setTitle(QCoreApplication::translate("MainWindow", "H&ulp", nullptr));
         menu_Rapporten->setTitle(QCoreApplication::translate("MainWindow", "&Rapporten", nullptr));
+        menuGrafieken->setTitle(QCoreApplication::translate("MainWindow", "&Grafieken", nullptr));
     } // retranslateUi
 
 };

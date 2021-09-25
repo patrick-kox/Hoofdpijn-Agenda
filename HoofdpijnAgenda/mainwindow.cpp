@@ -20,16 +20,6 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
-#include "gebruikersgegevens.h"
-#include "hoofdpijntoevoegen.h"
-#include "recentehoofdpijnaanvallen.h"
-#include "allehoofdpijnaanvallen.h"
-#include "help.h"
-#include "over.h"
-#include "initializeDB.h"
-
-#include <QSqlDatabase>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -84,7 +74,24 @@ void MainWindow::on_actionToon_Alle_Hoofdpijn_Aanvallen_triggered()
 
 void MainWindow::on_action_Gegevensbestand_Herstellen_triggered()
 {
-    initializeDB();
+    QMessageBox msgBox;
+    msgBox.setText("Gegevensbestand herstellen");
+    msgBox.setInformativeText("Alle gegevens in het databestand worden verwijderd, bent u zeker?");
+    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+    msgBox.setDefaultButton(QMessageBox::No);
+    int ret = msgBox.exec();
+
+    switch (ret) {
+      case QMessageBox::Yes:
+          initializeDB();
+          break;
+      case QMessageBox::No:
+        QMessageBox confirm;
+        confirm.setText("Gegevensbestand herstellen");
+        confirm.setInformativeText("Gegevensbestand niet aangepast.");
+        confirm.exec();
+          break;
+    }
 }
 
 
@@ -101,5 +108,21 @@ void MainWindow::on_action_Informatie_triggered()
    Over *over = new Over;
    qDebug() << "Toon 'about' venster";
    over->show();
+}
+
+
+void MainWindow::on_actionGegevens_Exporteren_triggered()
+{
+    QMessageBox msgBox;
+    msgBox.setText("nog te implementeren.");
+    msgBox.exec();
+}
+
+
+void MainWindow::on_action_Ernst_triggered()
+{
+    ErnstGrafiek *ernstgrafiek = new ErnstGrafiek;
+    qDebug() << "Toon grafiek van de ernst van de hoofdpijnen.";
+    ernstgrafiek->show();
 }
 

@@ -22,7 +22,9 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QSpinBox>
+#include <QtWidgets/QTextBrowser>
 
 QT_BEGIN_NAMESPACE
 
@@ -52,6 +54,7 @@ public:
     QCheckBox *chkSpraakstoornissen;
     QCheckBox *chkDoofGevoel;
     QDialogButtonBox *buttonBox;
+    QSpacerItem *verticalSpacer;
     QGridLayout *gridLayout_5;
     QFormLayout *formLayout_6;
     QLabel *lblUitlokkendeFactoren;
@@ -82,13 +85,14 @@ public:
     QLineEdit *inputDuurVanDeAanval;
     QLabel *lblDatumVanDeAanval;
     QDateEdit *dateDatumVanDeAanval;
+    QTextBrowser *textBrowser;
 
     void setupUi(QDialog *HoofdpijnToevoegen)
     {
         if (HoofdpijnToevoegen->objectName().isEmpty())
             HoofdpijnToevoegen->setObjectName(QString::fromUtf8("HoofdpijnToevoegen"));
         HoofdpijnToevoegen->setWindowModality(Qt::WindowModal);
-        HoofdpijnToevoegen->resize(1447, 973);
+        HoofdpijnToevoegen->resize(1870, 973);
         QSizePolicy sizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -228,7 +232,11 @@ public:
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Save);
 
-        formLayout_3->setWidget(17, QFormLayout::FieldRole, buttonBox);
+        formLayout_3->setWidget(19, QFormLayout::FieldRole, buttonBox);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        formLayout_3->setItem(18, QFormLayout::FieldRole, verticalSpacer);
 
 
         gridLayout_2->addLayout(formLayout_3, 0, 0, 1, 1);
@@ -339,7 +347,7 @@ public:
         label_6 = new QLabel(HoofdpijnToevoegen);
         label_6->setObjectName(QString::fromUtf8("label_6"));
 
-        formLayout_6->setWidget(18, QFormLayout::LabelRole, label_6);
+        formLayout_6->setWidget(19, QFormLayout::LabelRole, label_6);
 
         lblTijdelijkOphoudenMetWerken = new QLabel(HoofdpijnToevoegen);
         lblTijdelijkOphoudenMetWerken->setObjectName(QString::fromUtf8("lblTijdelijkOphoudenMetWerken"));
@@ -391,6 +399,17 @@ public:
         dateDatumVanDeAanval->setCalendarPopup(true);
 
         formLayout_6->setWidget(17, QFormLayout::FieldRole, dateDatumVanDeAanval);
+
+        textBrowser = new QTextBrowser(HoofdpijnToevoegen);
+        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(textBrowser->sizePolicy().hasHeightForWidth());
+        textBrowser->setSizePolicy(sizePolicy1);
+        textBrowser->setMinimumSize(QSize(670, 250));
+
+        formLayout_6->setWidget(18, QFormLayout::FieldRole, textBrowser);
 
 
         gridLayout_5->addLayout(formLayout_6, 0, 0, 1, 1);
@@ -474,6 +493,29 @@ public:
         lblDuurVanDeAanval->setText(QCoreApplication::translate("HoofdpijnToevoegen", "Duur van de aanval", nullptr));
         label_17->setText(QCoreApplication::translate("HoofdpijnToevoegen", "Aantal uren of dagen", nullptr));
         lblDatumVanDeAanval->setText(QCoreApplication::translate("HoofdpijnToevoegen", "Datum van de aanval", nullptr));
+        textBrowser->setHtml(QCoreApplication::translate("HoofdpijnToevoegen", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Lijst van geneesmiddelen tegen hoofdpijn</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">AM: Mono-analgetica <span style=\" font-style:italic;\">(Aspirine</span><span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span style=\" font-style:italic;\">, Sedergine</span><span style=\" font-family:'Helvetica','Nimb"
+                        "us Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span style=\" font-style:italic;\">, Dafalgan</span><span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span style=\" font-style:italic;\">, Perdolan mono</span><span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span style=\" font-style:italic;\">, Panadol</span><span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span style=\" font-style:italic;\">, Panadol Plus</span><span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:"
+                        "16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span style=\" font-style:italic;\">, ...)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">AB: Combinatieanalgetica <span style=\" font-style:italic;\">(Perdolan</span><span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span style=\" font-style:italic;\">, Dafalgan code\303\257ne</span><span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span style=\" font-style:italic;\">, Saridon</span><span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span styl"
+                        "e=\" font-style:italic;\">, Panadol code\303\257ne</span><span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span style=\" font-style:italic;\">,...)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">AI: Anti-inflammatoire <span style=\" font-style:italic;\">(Apranax</span><span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span><span style=\" font-style:italic;\">)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">MK: Migraine Kranit<span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; backgrou"
+                        "nd-color:#ffffff;\">\302\256</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">MP: Migpriv<span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">C: Cafergot<span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">D: Diergo Spray<span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span></p>\n"
+""
+                        "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">I: Imitrex<span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">N: Naramig<span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Z: Zomig<span style=\" font-family:'Helvetica','Nimbus Sans L','Arial','Liberation Sans','sans-serif'; font-size:16px; font-weight:600; color:#545454; background-color:#ffffff;\">\302\256</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0"
+                        "px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
     } // retranslateUi
 
 };
