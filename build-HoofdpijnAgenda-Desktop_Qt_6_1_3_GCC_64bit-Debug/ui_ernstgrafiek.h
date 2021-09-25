@@ -33,8 +33,10 @@ public:
     {
         if (ErnstGrafiek->objectName().isEmpty())
             ErnstGrafiek->setObjectName(QString::fromUtf8("ErnstGrafiek"));
-        ErnstGrafiek->resize(500, 500);
-        ErnstGrafiek->setMinimumSize(QSize(500, 500));
+        ErnstGrafiek->setWindowModality(Qt::ApplicationModal);
+        ErnstGrafiek->resize(800, 800);
+        ErnstGrafiek->setMinimumSize(QSize(800, 800));
+        ErnstGrafiek->setMaximumSize(QSize(800, 800));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/images/Icon1.xpm"), QSize(), QIcon::Normal, QIcon::Off);
         ErnstGrafiek->setWindowIcon(icon);
@@ -44,6 +46,8 @@ public:
         verticalLayout->setSizeConstraint(QLayout::SetMinimumSize);
         horizontalFrame = new QFrame(ErnstGrafiek);
         horizontalFrame->setObjectName(QString::fromUtf8("horizontalFrame"));
+        horizontalFrame->setMinimumSize(QSize(800, 800));
+        horizontalFrame->setMaximumSize(QSize(800, 800));
         horizontalLayout = new QHBoxLayout(horizontalFrame);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
 

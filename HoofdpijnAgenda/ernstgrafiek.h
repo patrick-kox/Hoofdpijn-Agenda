@@ -22,6 +22,7 @@ class ErnstGrafiek : public QDialog
 public:
     explicit ErnstGrafiek(QWidget *parent = nullptr);
     ~ErnstGrafiek();
+    void toonGrafiek() const;
 
 private:
     Ui::ErnstGrafiek *ui;

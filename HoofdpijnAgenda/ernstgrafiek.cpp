@@ -9,7 +9,16 @@ ErnstGrafiek::ErnstGrafiek(QWidget *parent) :
     ui(new Ui::ErnstGrafiek)
 {
     ui->setupUi(this);
+    toonGrafiek();
+}
 
+ErnstGrafiek::~ErnstGrafiek()
+{
+    delete ui;
+}
+
+void ErnstGrafiek::toonGrafiek() const
+{
     QPieSeries *series = new QPieSeries;
 
    int ernst;
@@ -80,28 +89,17 @@ ErnstGrafiek::ErnstGrafiek(QWidget *parent) :
             exit(4);
         }
 
-    series->append("1", ernst1);
-    series->append("2", ernst2);
-    series->append("3", ernst3);
-    series->append("4", ernst4);
-    series->append("5", ernst5);
-    series->append("6", ernst6);
-    series->append("7", ernst7);
-    series->append("8", ernst8);
-    series->append("9", ernst9);
-    series->append("10", ernst10);
+    series->append("licht", (ernst1 + ernst2 + ernst3));
+    series->append("matig", (ernst4 + ernst5 + ernst6 + ernst7));
+    series->append("ernstig", (ernst8 + ernst9 + ernst10));
 
     QChart *chart = new QChart;
     chart->addSeries(series);
     chart->setTitle("Ernst van de hoofdpijnaanvallen");
+    chart->setDropShadowEnabled();
 
     QChartView *chartview = new QChartView(chart);
 
     chartview->setParent(ui->horizontalFrame);
-
-}
-
-ErnstGrafiek::~ErnstGrafiek();
-{
-    delete ui;
+    chartview->resize(ui->horizontalFrame->size());
 }

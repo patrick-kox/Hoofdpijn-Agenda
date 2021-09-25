@@ -14,7 +14,7 @@ EQ            = =
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DQT_QML_DEBUG -DQT_CHARTS_LIB -DQT_OPENGLWIDGETS_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB
+DEFINES       = -DQT_DISABLE_DEPRECATED_BEFORE=0x060000 -DQT_QML_DEBUG -DQT_CHARTS_LIB -DQT_OPENGLWIDGETS_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -std=gnu++1z -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
 INCPATH       = -I../HoofdpijnAgenda -I. -I../../../../Qt/6.1.3/gcc_64/include -I../../../../Qt/6.1.3/gcc_64/include/QtCharts -I../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets -I../../../../Qt/6.1.3/gcc_64/include/QtWidgets -I../../../../Qt/6.1.3/gcc_64/include/QtOpenGL -I../../../../Qt/6.1.3/gcc_64/include/QtGui -I../../../../Qt/6.1.3/gcc_64/include/QtSql -I../../../../Qt/6.1.3/gcc_64/include/QtCore -I. -I. -I../../../../Qt/6.1.3/gcc_64/mkspecs/linux-g++
@@ -1505,7 +1505,12 @@ moc_ernstgrafiek.cpp: ../HoofdpijnAgenda/ernstgrafiek.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qxylegendmarker.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qtchartsversion.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QChartView \
-		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QBarSeries \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlDatabase \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqldatabase.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsqlglobal.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsql-config.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
 		moc_predefs.h \
 		../../../../Qt/6.1.3/gcc_64/libexec/moc
 	/home/patrick/Qt/6.1.3/gcc_64/libexec/moc $(DEFINES) --include /home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_1_3_GCC_64bit-Debug/moc_predefs.h -I/home/patrick/Qt/6.1.3/gcc_64/mkspecs/linux-g++ -I/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda -I/home/patrick/Qt/6.1.3/gcc_64/include -I/home/patrick/Qt/6.1.3/gcc_64/include/QtCharts -I/home/patrick/Qt/6.1.3/gcc_64/include/QtOpenGLWidgets -I/home/patrick/Qt/6.1.3/gcc_64/include/QtWidgets -I/home/patrick/Qt/6.1.3/gcc_64/include/QtOpenGL -I/home/patrick/Qt/6.1.3/gcc_64/include/QtGui -I/home/patrick/Qt/6.1.3/gcc_64/include/QtSql -I/home/patrick/Qt/6.1.3/gcc_64/include/QtCore -I. -I/usr/include/c++/10 -I/usr/include/x86_64-linux-gnu/c++/10 -I/usr/include/c++/10/backward -I/usr/lib/gcc/x86_64-linux-gnu/10/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../HoofdpijnAgenda/ernstgrafiek.h -o moc_ernstgrafiek.cpp
@@ -2518,7 +2523,8 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qxylegendmarker.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qtchartsversion.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QChartView \
-		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QBarSeries \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
 		moc_predefs.h \
 		../../../../Qt/6.1.3/gcc_64/libexec/moc
 	/home/patrick/Qt/6.1.3/gcc_64/libexec/moc $(DEFINES) --include /home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_1_3_GCC_64bit-Debug/moc_predefs.h -I/home/patrick/Qt/6.1.3/gcc_64/mkspecs/linux-g++ -I/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda -I/home/patrick/Qt/6.1.3/gcc_64/include -I/home/patrick/Qt/6.1.3/gcc_64/include/QtCharts -I/home/patrick/Qt/6.1.3/gcc_64/include/QtOpenGLWidgets -I/home/patrick/Qt/6.1.3/gcc_64/include/QtWidgets -I/home/patrick/Qt/6.1.3/gcc_64/include/QtOpenGL -I/home/patrick/Qt/6.1.3/gcc_64/include/QtGui -I/home/patrick/Qt/6.1.3/gcc_64/include/QtSql -I/home/patrick/Qt/6.1.3/gcc_64/include/QtCore -I. -I/usr/include/c++/10 -I/usr/include/x86_64-linux-gnu/c++/10 -I/usr/include/c++/10/backward -I/usr/lib/gcc/x86_64-linux-gnu/10/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../HoofdpijnAgenda/mainwindow.h -o moc_mainwindow.cpp
@@ -3715,19 +3721,20 @@ ernstgrafiek.o: ../HoofdpijnAgenda/ernstgrafiek.cpp ../HoofdpijnAgenda/ernstgraf
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qxylegendmarker.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qtchartsversion.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QChartView \
-		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QBarSeries \
-		ui_ernstgrafiek.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialogButtonBox \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QGridLayout \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QVBoxLayout \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlDatabase \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqldatabase.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsqlglobal.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsql-config.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
-		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
+		ui_ernstgrafiek.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialogButtonBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QFrame \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QHBoxLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ernstgrafiek.o ../HoofdpijnAgenda/ernstgrafiek.cpp
 
 gebruikersgegevens.o: ../HoofdpijnAgenda/gebruikersgegevens.cpp ../HoofdpijnAgenda/gebruikersgegevens.h \
@@ -5299,7 +5306,8 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qxylegendmarker.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qtchartsversion.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QChartView \
-		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QBarSeries \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QLocale \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QTranslator \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QtSql \
@@ -5310,14 +5318,12 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlfield.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlindex.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlrecord.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquerymodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlrelationaldelegate.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlrelationaltablemodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqltablemodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlresult.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsqlversion.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../HoofdpijnAgenda/main.cpp
 
@@ -5933,7 +5939,8 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qxylegendmarker.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qtchartsversion.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QChartView \
-		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QBarSeries
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
+		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../HoofdpijnAgenda/mainwindow.cpp
 
 over.o: ../HoofdpijnAgenda/over.cpp ../HoofdpijnAgenda/over.h \
