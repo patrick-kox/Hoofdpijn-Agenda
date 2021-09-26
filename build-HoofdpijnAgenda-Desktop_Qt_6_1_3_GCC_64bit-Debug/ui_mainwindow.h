@@ -36,6 +36,8 @@ public:
     QAction *action_Ernst_van_de_hoofdpijnen;
     QAction *action_Ernst;
     QAction *actionSymptomen;
+    QAction *action_Rapport;
+    QAction *action_Rapport_Weergeven;
     QWidget *centralwidget;
     QLabel *Background;
     QLabel *label;
@@ -43,7 +45,6 @@ public:
     QMenu *menuBestand;
     QMenu *menuHulpmiddelen;
     QMenu *menuH_ulp;
-    QMenu *menu_Rapporten;
     QMenu *menuGrafieken;
 
     void setupUi(QMainWindow *MainWindow)
@@ -85,6 +86,10 @@ public:
         action_Ernst->setObjectName(QString::fromUtf8("action_Ernst"));
         actionSymptomen = new QAction(MainWindow);
         actionSymptomen->setObjectName(QString::fromUtf8("actionSymptomen"));
+        action_Rapport = new QAction(MainWindow);
+        action_Rapport->setObjectName(QString::fromUtf8("action_Rapport"));
+        action_Rapport_Weergeven = new QAction(MainWindow);
+        action_Rapport_Weergeven->setObjectName(QString::fromUtf8("action_Rapport_Weergeven"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         Background = new QLabel(centralwidget);
@@ -110,15 +115,12 @@ public:
         menuHulpmiddelen->setObjectName(QString::fromUtf8("menuHulpmiddelen"));
         menuH_ulp = new QMenu(menubar);
         menuH_ulp->setObjectName(QString::fromUtf8("menuH_ulp"));
-        menu_Rapporten = new QMenu(menubar);
-        menu_Rapporten->setObjectName(QString::fromUtf8("menu_Rapporten"));
         menuGrafieken = new QMenu(menubar);
         menuGrafieken->setObjectName(QString::fromUtf8("menuGrafieken"));
         MainWindow->setMenuBar(menubar);
 
         menubar->addAction(menuBestand->menuAction());
         menubar->addAction(menuGrafieken->menuAction());
-        menubar->addAction(menu_Rapporten->menuAction());
         menubar->addAction(menuHulpmiddelen->menuAction());
         menubar->addAction(menuH_ulp->menuAction());
         menuBestand->addAction(action_Gebruikers_Gegevens);
@@ -128,6 +130,8 @@ public:
         menuBestand->addSeparator();
         menuBestand->addAction(action_Afsluiten);
         menuHulpmiddelen->addAction(action_Gegevensbestand_Herstellen);
+        menuHulpmiddelen->addSeparator();
+        menuHulpmiddelen->addAction(action_Rapport_Weergeven);
         menuH_ulp->addAction(action_Help);
         menuH_ulp->addAction(action_Informatie);
         menuGrafieken->addAction(action_Ernst);
@@ -153,12 +157,13 @@ public:
         action_Ernst_van_de_hoofdpijnen->setText(QCoreApplication::translate("MainWindow", "&Ernst van de hoofdpijnen", nullptr));
         action_Ernst->setText(QCoreApplication::translate("MainWindow", "&Ernst", nullptr));
         actionSymptomen->setText(QCoreApplication::translate("MainWindow", "&Symptomen", nullptr));
+        action_Rapport->setText(QCoreApplication::translate("MainWindow", "&Rapport", nullptr));
+        action_Rapport_Weergeven->setText(QCoreApplication::translate("MainWindow", "&Rapport Opslaan", nullptr));
         Background->setText(QString());
         label->setText(QCoreApplication::translate("MainWindow", "Hoofdpijn Agenda", nullptr));
         menuBestand->setTitle(QCoreApplication::translate("MainWindow", "&Bestand", nullptr));
         menuHulpmiddelen->setTitle(QCoreApplication::translate("MainWindow", "&Hulpmiddellen", nullptr));
         menuH_ulp->setTitle(QCoreApplication::translate("MainWindow", "H&ulp", nullptr));
-        menu_Rapporten->setTitle(QCoreApplication::translate("MainWindow", "&Rapporten", nullptr));
         menuGrafieken->setTitle(QCoreApplication::translate("MainWindow", "&Grafieken", nullptr));
     } // retranslateUi
 

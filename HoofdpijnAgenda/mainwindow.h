@@ -26,6 +26,8 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 #include <QVector>
 #include <QMessageBox>
 #include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QFile>
 
 #include "Hoofdpijnen.h"
 #include "ui_mainwindow.h"
@@ -50,6 +52,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void writePdf();
 
 private slots:
     void on_action_Afsluiten_triggered();
@@ -73,6 +76,8 @@ private slots:
     void on_action_Ernst_triggered();
 
     void on_actionSymptomen_triggered();
+
+    void on_action_Rapport_Weergeven_triggered();
 
 private:
     Ui::MainWindow *ui;

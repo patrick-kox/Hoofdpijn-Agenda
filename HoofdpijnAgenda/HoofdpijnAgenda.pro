@@ -48,7 +48,9 @@ FORMS += \
 
 TRANSLATIONS += \
     HoofdpijnAgenda_nl_BE.ts \
-    HoofdpijnAgenda_en_US.ts
+    HoofdpijnAgenda_nl_NL.ts \
+    HoofdpijnAgenda_en_US.ts \
+    HoofdpijnAgenda_en_GB.ts
 CONFIG += lrelease
 CONFIG += embed_translations
 

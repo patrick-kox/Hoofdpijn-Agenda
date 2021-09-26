@@ -718,13 +718,13 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../HoofdpijnAgenda/HoofdpijnAgenda_nl_BE.ts ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts $(DISTDIR)/
+	$(COPY_FILE) --parents ../HoofdpijnAgenda/HoofdpijnAgenda_nl_BE.ts ../HoofdpijnAgenda/HoofdpijnAgenda_nl_NL.ts ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts ../HoofdpijnAgenda/HoofdpijnAgenda_en_GB.ts $(DISTDIR)/
 	$(COPY_FILE) --parents ../HoofdpijnAgenda/Resources.qrc qmake_qmake_qm_files.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../Qt/6.1.3/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../HoofdpijnAgenda/Hoofdpijnen.h ../HoofdpijnAgenda/allehoofdpijnaanvallen.h ../HoofdpijnAgenda/ernstgrafiek.h ../HoofdpijnAgenda/gebruikersgegevens.h ../HoofdpijnAgenda/help.h ../HoofdpijnAgenda/hoofdpijntoevoegen.h ../HoofdpijnAgenda/initializeDB.h ../HoofdpijnAgenda/mainwindow.h ../HoofdpijnAgenda/over.h ../HoofdpijnAgenda/recentehoofdpijnaanvallen.h ../HoofdpijnAgenda/symptomengrafiek.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../HoofdpijnAgenda/Hoofdpijnen.cpp ../HoofdpijnAgenda/allehoofdpijnaanvallen.cpp ../HoofdpijnAgenda/ernstgrafiek.cpp ../HoofdpijnAgenda/gebruikersgegevens.cpp ../HoofdpijnAgenda/help.cpp ../HoofdpijnAgenda/hoofdpijntoevoegen.cpp ../HoofdpijnAgenda/initializeDB.cpp ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/over.cpp ../HoofdpijnAgenda/recentehoofdpijnaanvallen.cpp ../HoofdpijnAgenda/symptomengrafiek.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../HoofdpijnAgenda/allehoofdpijnaanvallen.ui ../HoofdpijnAgenda/ernstgrafiek.ui ../HoofdpijnAgenda/gebruikersgegevens.ui ../HoofdpijnAgenda/help.ui ../HoofdpijnAgenda/hoofdpijntoevoegen.ui ../HoofdpijnAgenda/mainwindow.ui ../HoofdpijnAgenda/over.ui ../HoofdpijnAgenda/recentehoofdpijnaanvallen.ui ../HoofdpijnAgenda/symptomengrafiek.ui $(DISTDIR)/
-	$(COPY_FILE) --parents ../HoofdpijnAgenda/HoofdpijnAgenda_nl_BE.ts ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts $(DISTDIR)/
+	$(COPY_FILE) --parents ../HoofdpijnAgenda/HoofdpijnAgenda_nl_BE.ts ../HoofdpijnAgenda/HoofdpijnAgenda_nl_NL.ts ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts ../HoofdpijnAgenda/HoofdpijnAgenda_en_GB.ts $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -748,20 +748,30 @@ check: first
 
 benchmark: first
 
-compiler_lrelease_make_all: .qm/HoofdpijnAgenda_nl_BE.qm .qm/HoofdpijnAgenda_en_US.qm
+compiler_lrelease_make_all: .qm/HoofdpijnAgenda_nl_BE.qm .qm/HoofdpijnAgenda_nl_NL.qm .qm/HoofdpijnAgenda_en_US.qm .qm/HoofdpijnAgenda_en_GB.qm
 compiler_lrelease_clean:
-	-$(DEL_FILE) .qm/HoofdpijnAgenda_nl_BE.qm .qm/HoofdpijnAgenda_en_US.qm
+	-$(DEL_FILE) .qm/HoofdpijnAgenda_nl_BE.qm .qm/HoofdpijnAgenda_nl_NL.qm .qm/HoofdpijnAgenda_en_US.qm .qm/HoofdpijnAgenda_en_GB.qm
 .qm/HoofdpijnAgenda_nl_BE.qm: ../HoofdpijnAgenda/HoofdpijnAgenda_nl_BE.ts
 	/home/patrick/Qt/6.1.3/gcc_64/bin/lrelease ../HoofdpijnAgenda/HoofdpijnAgenda_nl_BE.ts -qm .qm/HoofdpijnAgenda_nl_BE.qm
 
+.qm/HoofdpijnAgenda_nl_NL.qm: ../HoofdpijnAgenda/HoofdpijnAgenda_nl_NL.ts
+	/home/patrick/Qt/6.1.3/gcc_64/bin/lrelease ../HoofdpijnAgenda/HoofdpijnAgenda_nl_NL.ts -qm .qm/HoofdpijnAgenda_nl_NL.qm
+
 .qm/HoofdpijnAgenda_en_US.qm: ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts
 	/home/patrick/Qt/6.1.3/gcc_64/bin/lrelease ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts -qm .qm/HoofdpijnAgenda_en_US.qm
+
+.qm/HoofdpijnAgenda_en_GB.qm: ../HoofdpijnAgenda/HoofdpijnAgenda_en_GB.ts
+	/home/patrick/Qt/6.1.3/gcc_64/bin/lrelease ../HoofdpijnAgenda/HoofdpijnAgenda_en_GB.ts -qm .qm/HoofdpijnAgenda_en_GB.qm
 
 compiler_rcc_make_all: qrc_Resources.cpp qrc_qmake_qmake_qm_files.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) qrc_Resources.cpp qrc_qmake_qmake_qm_files.cpp
 qrc_Resources.cpp: ../HoofdpijnAgenda/Resources.qrc \
 		../../../../Qt/6.1.3/gcc_64/libexec/rcc \
+		../HoofdpijnAgenda/HoofdpijnAgenda_en_GB.ts \
+		../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts \
+		../HoofdpijnAgenda/HoofdpijnAgenda_nl_NL.ts \
+		../HoofdpijnAgenda/HoofdpijnAgenda_nl_BE.ts \
 		../HoofdpijnAgenda/iStock-1146312637.jpg \
 		../HoofdpijnAgenda/Icon_new.xpm \
 		../HoofdpijnAgenda/Icon2.xpm \
@@ -779,6 +789,8 @@ qrc_Resources.cpp: ../HoofdpijnAgenda/Resources.qrc \
 
 qrc_qmake_qmake_qm_files.cpp: qmake_qmake_qm_files.qrc \
 		../../../../Qt/6.1.3/gcc_64/libexec/rcc \
+		.qm/HoofdpijnAgenda_nl_NL.qm \
+		.qm/HoofdpijnAgenda_en_GB.qm \
 		.qm/HoofdpijnAgenda_en_US.qm \
 		.qm/HoofdpijnAgenda_nl_BE.qm
 	/home/patrick/Qt/6.1.3/gcc_64/libexec/rcc -name qmake_qmake_qm_files qmake_qmake_qm_files.qrc -o qrc_qmake_qmake_qm_files.cpp
@@ -2532,6 +2544,11 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
 		../HoofdpijnAgenda/symptomengrafiek.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPdfWriter \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPainter \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageSize \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QFile \
 		moc_predefs.h \
 		../../../../Qt/6.1.3/gcc_64/libexec/moc
 	/home/patrick/Qt/6.1.3/gcc_64/libexec/moc $(DEFINES) --include /home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_1_3_GCC_64bit-Debug/moc_predefs.h -I/home/patrick/Qt/6.1.3/gcc_64/mkspecs/linux-g++ -I/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda -I/home/patrick/Qt/6.1.3/gcc_64/include -I/home/patrick/Qt/6.1.3/gcc_64/include/QtCharts -I/home/patrick/Qt/6.1.3/gcc_64/include/QtOpenGLWidgets -I/home/patrick/Qt/6.1.3/gcc_64/include/QtWidgets -I/home/patrick/Qt/6.1.3/gcc_64/include/QtOpenGL -I/home/patrick/Qt/6.1.3/gcc_64/include/QtGui -I/home/patrick/Qt/6.1.3/gcc_64/include/QtSql -I/home/patrick/Qt/6.1.3/gcc_64/include/QtCore -I. -I/usr/include/c++/10 -I/usr/include/x86_64-linux-gnu/c++/10 -I/usr/include/c++/10/backward -I/usr/lib/gcc/x86_64-linux-gnu/10/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../HoofdpijnAgenda/mainwindow.h -o moc_mainwindow.cpp
@@ -3414,6 +3431,11 @@ moc_symptomengrafiek.cpp: ../HoofdpijnAgenda/symptomengrafiek.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsql-config.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPdfWriter \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPainter \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageSize \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QFile \
 		moc_predefs.h \
 		../../../../Qt/6.1.3/gcc_64/libexec/moc
 	/home/patrick/Qt/6.1.3/gcc_64/libexec/moc $(DEFINES) --include /home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_1_3_GCC_64bit-Debug/moc_predefs.h -I/home/patrick/Qt/6.1.3/gcc_64/mkspecs/linux-g++ -I/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda -I/home/patrick/Qt/6.1.3/gcc_64/include -I/home/patrick/Qt/6.1.3/gcc_64/include/QtCharts -I/home/patrick/Qt/6.1.3/gcc_64/include/QtOpenGLWidgets -I/home/patrick/Qt/6.1.3/gcc_64/include/QtWidgets -I/home/patrick/Qt/6.1.3/gcc_64/include/QtOpenGL -I/home/patrick/Qt/6.1.3/gcc_64/include/QtGui -I/home/patrick/Qt/6.1.3/gcc_64/include/QtSql -I/home/patrick/Qt/6.1.3/gcc_64/include/QtCore -I. -I/usr/include/c++/10 -I/usr/include/x86_64-linux-gnu/c++/10 -I/usr/include/c++/10/backward -I/usr/lib/gcc/x86_64-linux-gnu/10/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../HoofdpijnAgenda/symptomengrafiek.h -o moc_symptomengrafiek.cpp
@@ -5917,6 +5939,11 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
 		../HoofdpijnAgenda/symptomengrafiek.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPdfWriter \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPainter \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageSize \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QFile \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QLocale \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QTranslator \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QtSql \
@@ -6550,7 +6577,12 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/QChartView \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
-		../HoofdpijnAgenda/symptomengrafiek.h
+		../HoofdpijnAgenda/symptomengrafiek.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPdfWriter \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPainter \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageSize \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QFile
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../HoofdpijnAgenda/mainwindow.cpp
 
 over.o: ../HoofdpijnAgenda/over.cpp ../HoofdpijnAgenda/over.h \
@@ -7488,6 +7520,11 @@ symptomengrafiek.o: ../HoofdpijnAgenda/symptomengrafiek.cpp ../HoofdpijnAgenda/s
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsql-config.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPdfWriter \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPainter \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageSize \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QFile \
 		ui_symptomengrafiek.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \

@@ -598,83 +598,82 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="111"/>
+        <location filename="mainwindow.ui" line="113"/>
         <source>H&amp;ulp</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="118"/>
-        <source>&amp;Rapporten</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="mainwindow.ui" line="123"/>
+        <location filename="mainwindow.ui" line="120"/>
         <source>&amp;Grafieken</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="136"/>
+        <location filename="mainwindow.ui" line="132"/>
         <source>&amp;Gebruikers Gegevens</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="141"/>
+        <location filename="mainwindow.ui" line="137"/>
         <source>&amp;Hoofdpijn Toevoegen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="166"/>
+        <location filename="mainwindow.ui" line="162"/>
         <source>&amp;Over</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="171"/>
+        <location filename="mainwindow.ui" line="167"/>
         <source>&amp;Gegevens Herstellen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="181"/>
+        <location filename="mainwindow.ui" line="177"/>
         <source>&amp;Ernst van de hoofdpijnen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="186"/>
+        <location filename="mainwindow.ui" line="182"/>
         <source>&amp;Ernst</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="191"/>
+        <location filename="mainwindow.ui" line="187"/>
         <source>&amp;Symptomen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="141"/>
-        <source>&amp;Hoofdpijn Toevoegen</source>
-        <oldsource>&amp;Toon Alle Hoofdpijn Aanvallen</oldsource>
+        <location filename="mainwindow.ui" line="192"/>
+        <source>&amp;Rapport</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="146"/>
+        <location filename="mainwindow.ui" line="197"/>
+        <source>&amp;Rapport Opslaan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="142"/>
         <source>&amp;Recente Hoofdpijnen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="151"/>
+        <location filename="mainwindow.ui" line="147"/>
         <source>Alle &amp;Hoofdpijnen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="156"/>
+        <location filename="mainwindow.ui" line="152"/>
         <source>&amp;Afsluiten</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="161"/>
+        <location filename="mainwindow.ui" line="157"/>
         <source>&amp;Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="176"/>
+        <location filename="mainwindow.ui" line="172"/>
         <source>Gegevens &amp;Exporteren</source>
         <translation type="unfinished"></translation>
     </message>
@@ -741,6 +740,209 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="mainwindow.cpp" line="133"/>
         <source>Toon grafiek van symptomen.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="183"/>
+        <source>Fout bij openen van databestand!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="247"/>
+        <source>Probleem bij openen gegevensbestand</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="272"/>
+        <location filename="mainwindow.cpp" line="274"/>
+        <location filename="mainwindow.cpp" line="276"/>
+        <location filename="mainwindow.cpp" line="278"/>
+        <source>(geen)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="280"/>
+        <source>Opslaan als</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="280"/>
+        <source>PDF Bestanden (*.pdf)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="290"/>
+        <source>Naam:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="292"/>
+        <source>Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="294"/>
+        <source>Gemeente:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="298"/>
+        <source>Rapport Hoofdpijnagenda</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="302"/>
+        <source> bij </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="302"/>
+        <source> hoofdpijnaanvallen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="304"/>
+        <source>Kenmerken van de hoofdpijn</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="305"/>
+        <source>Aan één zijde</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="308"/>
+        <source>Kloppende hoofdpijn</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="310"/>
+        <source>Hindert dagelijkse activiteiten</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="312"/>
+        <source>Verergert met beweging</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="315"/>
+        <source>Symptomen die die hoofdpijn begeleiden</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="316"/>
+        <source>Braakneigingen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="318"/>
+        <source>Braken</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="320"/>
+        <source>Overgevoelig voor licht</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="322"/>
+        <source>Overgevoelig voor geluid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="325"/>
+        <source>Klachten bij het BEGIN van de aanval</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="326"/>
+        <source>Stoornissen van het zicht</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="328"/>
+        <source>Tintelingen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="330"/>
+        <source>Doof gevoel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="332"/>
+        <source>Spraakstoornissen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="335"/>
+        <source>Uitlokkende Factoren</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="336"/>
+        <source>Maandstonden</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="338"/>
+        <source>Vermindering van levensritme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="340"/>
+        <source>Voedingsstoffen of drank</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="342"/>
+        <source>Stress</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="345"/>
+        <source>Invloed op de activiteiten</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="346"/>
+        <source>Verstoord familiaal leven</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="348"/>
+        <source>Verstoorde vrijetijdsbesteding</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="353"/>
+        <source>Medicatie ingenomen bij meest recente hoofdpijnaanval</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="354"/>
+        <source>Geneesmiddel #1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="356"/>
+        <source>Geneesmiddel #2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="358"/>
+        <source>Geneesmiddel #3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="360"/>
+        <source>Geneesmiddel #4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="365"/>
+        <source>Het bestand is opgeslagen als </source>
         <translation type="unfinished"></translation>
     </message>
 </context>

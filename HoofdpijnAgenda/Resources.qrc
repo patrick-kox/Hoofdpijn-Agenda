@@ -14,4 +14,10 @@
         <file>site-icon_w.png</file>
         <file>site-icon.png</file>
     </qresource>
+    <qresource prefix="/i18n">
+        <file>HoofdpijnAgenda_en_GB.ts</file>
+        <file>HoofdpijnAgenda_en_US.ts</file>
+        <file>HoofdpijnAgenda_nl_BE.ts</file>
+        <file>HoofdpijnAgenda_nl_NL.ts</file>
+    </qresource>
 </RCC>

@@ -105,6 +105,8 @@
      <string>&amp;Hulpmiddellen</string>
     </property>
     <addaction name="action_Gegevensbestand_Herstellen"/>
+    <addaction name="separator"/>
+    <addaction name="action_Rapport_Weergeven"/>
    </widget>
    <widget class="QMenu" name="menuH_ulp">
     <property name="title">
@@ -112,11 +114,6 @@
     </property>
     <addaction name="action_Help"/>
     <addaction name="action_Informatie"/>
-   </widget>
-   <widget class="QMenu" name="menu_Rapporten">
-    <property name="title">
-     <string>&amp;Rapporten</string>
-    </property>
    </widget>
    <widget class="QMenu" name="menuGrafieken">
     <property name="title">
@@ -127,7 +124,6 @@
    </widget>
    <addaction name="menuBestand"/>
    <addaction name="menuGrafieken"/>
-   <addaction name="menu_Rapporten"/>
    <addaction name="menuHulpmiddelen"/>
    <addaction name="menuH_ulp"/>
   </widget>
@@ -189,6 +185,16 @@
   <action name="actionSymptomen">
    <property name="text">
     <string>&amp;Symptomen</string>
+   </property>
+  </action>
+  <action name="action_Rapport">
+   <property name="text">
+    <string>&amp;Rapport</string>
+   </property>
+  </action>
+  <action name="action_Rapport_Weergeven">
+   <property name="text">
+    <string>&amp;Rapport Opslaan</string>
    </property>
   </action>
  </widget>
