@@ -104,7 +104,6 @@
     <property name="title">
      <string>&amp;Hulpmiddellen</string>
     </property>
-    <addaction name="actionGegevens_Exporteren"/>
     <addaction name="action_Gegevensbestand_Herstellen"/>
    </widget>
    <widget class="QMenu" name="menuH_ulp">
@@ -124,6 +123,7 @@
      <string>&amp;Grafieken</string>
     </property>
     <addaction name="action_Ernst"/>
+    <addaction name="actionSymptomen"/>
    </widget>
    <addaction name="menuBestand"/>
    <addaction name="menuGrafieken"/>
@@ -184,6 +184,11 @@
   <action name="action_Ernst">
    <property name="text">
     <string>&amp;Ernst</string>
+   </property>
+  </action>
+  <action name="actionSymptomen">
+   <property name="text">
+    <string>&amp;Symptomen</string>
    </property>
   </action>
  </widget>

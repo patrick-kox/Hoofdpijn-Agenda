@@ -99,7 +99,7 @@ void HoofdpijnToevoegen::on_buttonBox_accepted()
        QSqlQuery sql;
        if(db.isValid()) {
            if(db.tables().isEmpty()) {
-           qDebug() << "Databestand beschadigd!";
+           qDebug() << tr("Databestand beschadigd!");
            exit(3);
        }
            sql.prepare("INSERT INTO Hoofdpijnen (gebruikers_id, ernst, enkelzijdig, kloppend, hindertDagelijkseActiviteiten, ergerBijBeweging, andereKenmerken, braakneigingen, braken, "
@@ -142,17 +142,17 @@ void HoofdpijnToevoegen::on_buttonBox_accepted()
 
                           if(sql.exec()){
                               QMessageBox msgBox;
-                              msgBox.setText("De hoofdpijnaanval is opgeslagen.");
+                              msgBox.setText(tr("De hoofdpijnaanval is opgeslagen."));
                               msgBox.exec();
                           }
                           else {
-                              qDebug() << "Er is een fout opgetreden bij het opslaan van de Hoofdpijnaanval";
+                              qDebug() << tr("Er is een fout opgetreden bij het opslaan van de Hoofdpijnaanval");
                               exit(3);
                           }
        }
        else
        {
-           qDebug() << "Kan gegevensbestand niet openen!";
+           qDebug() << tr("Kan gegevensbestand niet openen!");
            exit(3);
        }
 }

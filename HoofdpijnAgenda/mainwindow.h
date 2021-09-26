@@ -37,6 +37,7 @@ along with Hoofdpijn Agenda.  If not, see <https://www.gnu.org/licenses/>.
 #include "over.h"
 #include "initializeDB.h"
 #include "ernstgrafiek.h"
+#include "symptomengrafiek.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow;}
@@ -70,6 +71,8 @@ private slots:
     void on_actionGegevens_Exporteren_triggered();
 
     void on_action_Ernst_triggered();
+
+    void on_actionSymptomen_triggered();
 
 private:
     Ui::MainWindow *ui;

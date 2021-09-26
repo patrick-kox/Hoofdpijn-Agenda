@@ -4,7 +4,6 @@
 #include <QDialog>
 #include <QtCharts>
 #include <QChartView>
-#include <QBarSet>
 #include <QPieSeries>
 
 #include <QSqlDatabase>
@@ -23,6 +22,9 @@ public:
     explicit ErnstGrafiek(QWidget *parent = nullptr);
     ~ErnstGrafiek();
     void toonGrafiek() const;
+
+private slots:
+    void on_buttonBox_accepted();
 
 private:
     Ui::ErnstGrafiek *ui;

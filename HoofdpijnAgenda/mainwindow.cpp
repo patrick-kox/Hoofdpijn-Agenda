@@ -43,7 +43,7 @@ void MainWindow::on_action_Afsluiten_triggered()
 void MainWindow::on_action_Gebruikers_Gegevens_triggered()
 {
     GebruikersGegevens *data = new GebruikersGegevens;
-    qDebug() << "Toon gebruikersgegevens";
+    qDebug() << tr("Toon gebruikersgegevens");
     data->show();
 }
 
@@ -51,7 +51,7 @@ void MainWindow::on_action_Gebruikers_Gegevens_triggered()
 void MainWindow::on_action_Hoofdpijn_Toevoegen_triggered()
 {
     HoofdpijnToevoegen *hoofdpijn = new HoofdpijnToevoegen;
-    qDebug() << "Voeg een hoofdpijn aanval toe";
+    qDebug() << tr("Voeg een hoofdpijn aanval toe");
     hoofdpijn->show();
 }
 
@@ -59,7 +59,7 @@ void MainWindow::on_action_Hoofdpijn_Toevoegen_triggered()
 void MainWindow::on_actionToon_meest_Recente_Hoofdpijn_Aanvallen_triggered()
 {
    RecenteHoofdpijnaanvallen *aanvallen = new RecenteHoofdpijnaanvallen;
-   qDebug() << "Toon meest recente hoofdpijnaanvallen";
+   qDebug() << tr("Toon meest recente hoofdpijnaanvallen");
    aanvallen->show();
 }
 
@@ -67,7 +67,7 @@ void MainWindow::on_actionToon_meest_Recente_Hoofdpijn_Aanvallen_triggered()
 void MainWindow::on_actionToon_Alle_Hoofdpijn_Aanvallen_triggered()
 {
     AlleHoofdpijnAanvallen *aanvallen = new AlleHoofdpijnAanvallen;
-    qDebug() << "Toon alle hoofdpijnaanvallen";
+    qDebug() << tr("Toon alle hoofdpijnaanvallen");
     aanvallen->show();
 }
 
@@ -75,8 +75,8 @@ void MainWindow::on_actionToon_Alle_Hoofdpijn_Aanvallen_triggered()
 void MainWindow::on_action_Gegevensbestand_Herstellen_triggered()
 {
     QMessageBox msgBox;
-    msgBox.setText("Gegevensbestand herstellen");
-    msgBox.setInformativeText("Alle gegevens in het databestand worden verwijderd, bent u zeker?");
+    msgBox.setText(tr("Gegevensbestand herstellen"));
+    msgBox.setInformativeText(tr("Alle gegevens in het databestand worden verwijderd, bent u zeker?"));
     msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
     msgBox.setDefaultButton(QMessageBox::No);
     int ret = msgBox.exec();
@@ -87,8 +87,8 @@ void MainWindow::on_action_Gegevensbestand_Herstellen_triggered()
           break;
       case QMessageBox::No:
         QMessageBox confirm;
-        confirm.setText("Gegevensbestand herstellen");
-        confirm.setInformativeText("Gegevensbestand niet aangepast.");
+        confirm.setText(tr("Gegevensbestand herstellen"));
+        confirm.setInformativeText(tr("Gegevensbestand niet aangepast."));
         confirm.exec();
           break;
     }
@@ -98,7 +98,7 @@ void MainWindow::on_action_Gegevensbestand_Herstellen_triggered()
 void MainWindow::on_action_Help_triggered()
 {
     Help *help = new Help;
-    qDebug() << "Toon help venster";
+    qDebug() << tr("Toon help venster");
     help->show();
 }
 
@@ -106,7 +106,7 @@ void MainWindow::on_action_Help_triggered()
 void MainWindow::on_action_Informatie_triggered()
 {
    Over *over = new Over;
-   qDebug() << "Toon 'about' venster";
+   qDebug() << tr("Toon 'about' venster");
    over->show();
 }
 
@@ -114,7 +114,7 @@ void MainWindow::on_action_Informatie_triggered()
 void MainWindow::on_actionGegevens_Exporteren_triggered()
 {
     QMessageBox msgBox;
-    msgBox.setText("nog te implementeren.");
+    msgBox.setText(tr("nog te implementeren."));
     msgBox.exec();
 }
 
@@ -122,7 +122,15 @@ void MainWindow::on_actionGegevens_Exporteren_triggered()
 void MainWindow::on_action_Ernst_triggered()
 {
     ErnstGrafiek *ernstgrafiek = new ErnstGrafiek;
-    qDebug() << "Toon grafiek van de ernst van de hoofdpijnen.";
+    qDebug() << tr("Toon grafiek van de ernst van de hoofdpijnen.");
     ernstgrafiek->show();
+}
+
+
+void MainWindow::on_actionSymptomen_triggered()
+{
+   SymptomenGrafiek *symptomengrafiek = new SymptomenGrafiek;
+   qDebug() << tr("Toon grafiek van symptomen.");
+   symptomengrafiek->show();
 }
 

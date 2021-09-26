@@ -19,7 +19,8 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     over.cpp \
-    recentehoofdpijnaanvallen.cpp
+    recentehoofdpijnaanvallen.cpp \
+    symptomengrafiek.cpp
 
 HEADERS += \
     Hoofdpijnen.h \
@@ -31,7 +32,8 @@ HEADERS += \
     initializeDB.h \
     mainwindow.h \
     over.h \
-    recentehoofdpijnaanvallen.h
+    recentehoofdpijnaanvallen.h \
+    symptomengrafiek.h
 
 FORMS += \
     allehoofdpijnaanvallen.ui \
@@ -41,7 +43,8 @@ FORMS += \
     hoofdpijntoevoegen.ui \
     mainwindow.ui \
     over.ui \
-    recentehoofdpijnaanvallen.ui
+    recentehoofdpijnaanvallen.ui \
+    symptomengrafiek.ui
 
 TRANSLATIONS += \
     HoofdpijnAgenda_nl_BE.ts \

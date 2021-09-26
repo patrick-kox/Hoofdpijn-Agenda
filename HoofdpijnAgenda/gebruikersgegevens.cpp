@@ -72,7 +72,7 @@ void GebruikersGegevens::leesGegevens() {
     }
     else
     {
-        qDebug() << "Fout bij openen van databestand!";
+        qDebug() << tr("Fout bij openen van databestand!");
         exit(1);
     }
     // db.close();
@@ -102,7 +102,7 @@ void GebruikersGegevens::on_buttonBox_accepted()
         QString command = "SELECT * FROM Gebruikers";
         QSqlQuery query(gebruikers_db);
         if (!query.exec(command)) {
-            qDebug() << "Fout bij lezen gegevensbestand";
+            qDebug() << tr("Fout bij lezen gegevensbestand");
             gebruikers_db.close();
             exit(3);
         }
@@ -120,14 +120,14 @@ void GebruikersGegevens::on_buttonBox_accepted()
             }
             if (gebruikers < 1) {
                 command = "INSERT INTO Gebruikers (voornaam, achternaam, geslacht, straat, huisnummer, postcode, gemeente, leeftijd)VALUES('"+ voornaam+ "','"+achternaam+"','"+geslacht+"','"+straat+"', '"+huisnummer+"', '"+postcode+"', '"+gemeente+"', '"+leeftijd+"');";
-                qDebug() << "Gebruiker invoegen in databestand";
+                qDebug() << tr("Gebruiker invoegen in databestand");
                 // Print the command used to add the user for debugging
                 // qDebug() << "commando: " << command;
                 query.exec(command);
             }
             else {
                 command = "UPDATE Gebruikers SET (voornaam, achternaam, geslacht, straat, huisnummer, postcode, gemeente, leeftijd)=('"+ voornaam+ "','"+achternaam+"','"+geslacht+"','"+straat+"', '"+huisnummer+"', '"+postcode+"', '"+gemeente+"', '"+leeftijd+"') WHERE id = 1;";
-                qDebug() << "Gebruiker gegevens aangepast in databastand";
+                qDebug() << tr("Gebruiker gegevens aangepast in databastand");
                 // Print the command used to update the user for debugging
                 // qDebug() << "commando: " << command;
                 query.exec(command);

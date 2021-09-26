@@ -56,7 +56,7 @@ public:
         buttonBox = new QDialogButtonBox(ErnstGrafiek);
         buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
         buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Ok);
+        buttonBox->setStandardButtons(QDialogButtonBox::Close|QDialogButtonBox::Save);
         buttonBox->setCenterButtons(true);
 
         verticalLayout->addWidget(buttonBox);

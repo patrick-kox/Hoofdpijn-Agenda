@@ -19,34 +19,34 @@ AlleHoofdpijnAanvallen::AlleHoofdpijnAanvallen(QWidget *parent) :
     ui->tableRecenteAanvallen->setColumnCount(28);
 
     // Define column header texts
-    QTableWidgetItem* datum = new QTableWidgetItem(QString("Datum"),QTableWidgetItem::Type);
-    QTableWidgetItem* ernst = new QTableWidgetItem(QString("Ernst"),QTableWidgetItem::Type);
-    QTableWidgetItem* enkelzijdig = new QTableWidgetItem(QString("U"),QTableWidgetItem::Type);
-    QTableWidgetItem* kloppend = new QTableWidgetItem(QString("K"),QTableWidgetItem::Type);
-    QTableWidgetItem* hindertDagAct = new QTableWidgetItem(QString("H"),QTableWidgetItem::Type);
-    QTableWidgetItem* verergertMBeweging = new QTableWidgetItem(QString("V"), QTableWidgetItem::Type);
-    QTableWidgetItem* andereKenmerken = new QTableWidgetItem(QString("Andere kenmerken"),QTableWidgetItem::Type);
-    QTableWidgetItem* braakneigingen = new QTableWidgetItem(QString("N"), QTableWidgetItem::Type);
-    QTableWidgetItem* braken = new QTableWidgetItem(QString("O"),QTableWidgetItem::Type);
-    QTableWidgetItem* overgevoeligLicht = new QTableWidgetItem(QString("L"),QTableWidgetItem::Type);
-    QTableWidgetItem* overgevoeligGeluid = new QTableWidgetItem(QString("B"), QTableWidgetItem::Type);
-    QTableWidgetItem* stoornissenZicht = new QTableWidgetItem(QString("S"), QTableWidgetItem::Type);
-    QTableWidgetItem* tintelingen = new QTableWidgetItem(QString("T"),QTableWidgetItem::Type);
-    QTableWidgetItem* doofGevoel = new QTableWidgetItem(QString("D"),QTableWidgetItem::Type);
-    QTableWidgetItem* spraakstoornissen = new QTableWidgetItem(QString("P"),QTableWidgetItem::Type);
-    QTableWidgetItem* maandstonden = new QTableWidgetItem(QString("R"),QTableWidgetItem::Type);
-    QTableWidgetItem* verminderingLevens = new QTableWidgetItem(QString("C"),QTableWidgetItem::Type);
-    QTableWidgetItem* voedingOfDrank = new QTableWidgetItem(QString("V"),QTableWidgetItem::Type);
-    QTableWidgetItem* stress = new QTableWidgetItem(QString("S"),QTableWidgetItem::Type);
-    QTableWidgetItem* andereTriggers = new QTableWidgetItem(QString("Andere Triggers"),QTableWidgetItem::Type);
-    QTableWidgetItem* geneesmiddel_1 = new QTableWidgetItem(QString("Eerste geneesmiddel"),QTableWidgetItem::Type);
-    QTableWidgetItem* geneesmiddel_2 = new QTableWidgetItem(QString("Tweede geneesmiddel"),QTableWidgetItem::Type);
-    QTableWidgetItem* geneesmiddel_3 = new QTableWidgetItem(QString("Derde geneesmidel"),QTableWidgetItem::Type);
-    QTableWidgetItem* geneesmiddel_4 = new QTableWidgetItem(QString("Vierde geneesmiddel"),QTableWidgetItem::Type);
-    QTableWidgetItem* tijdelijkOphoudenMetWerken = new QTableWidgetItem(QString("J"),QTableWidgetItem::Type);
-    QTableWidgetItem* verstoordFamLeven = new QTableWidgetItem(QString("F"),QTableWidgetItem::Type);
-    QTableWidgetItem* verstoordeVrijetijd = new QTableWidgetItem(QString("L"),QTableWidgetItem::Type);
-    QTableWidgetItem* duurVanDeAanval = new QTableWidgetItem(QString("Aantal uren of dagen"),QTableWidgetItem::Type);
+    QTableWidgetItem* datum = new QTableWidgetItem(QString(tr("Datum")),QTableWidgetItem::Type);
+    QTableWidgetItem* ernst = new QTableWidgetItem(QString(tr("Ernst")),QTableWidgetItem::Type);
+    QTableWidgetItem* enkelzijdig = new QTableWidgetItem(QString(tr("U")),QTableWidgetItem::Type);
+    QTableWidgetItem* kloppend = new QTableWidgetItem(QString(tr("K")),QTableWidgetItem::Type);
+    QTableWidgetItem* hindertDagAct = new QTableWidgetItem(QString(tr("H")),QTableWidgetItem::Type);
+    QTableWidgetItem* verergertMBeweging = new QTableWidgetItem(QString(tr("V")), QTableWidgetItem::Type);
+    QTableWidgetItem* andereKenmerken = new QTableWidgetItem(QString(tr("Andere kenmerken")),QTableWidgetItem::Type);
+    QTableWidgetItem* braakneigingen = new QTableWidgetItem(QString(tr("N")), QTableWidgetItem::Type);
+    QTableWidgetItem* braken = new QTableWidgetItem(QString(tr("O")),QTableWidgetItem::Type);
+    QTableWidgetItem* overgevoeligLicht = new QTableWidgetItem(QString(tr("L")),QTableWidgetItem::Type);
+    QTableWidgetItem* overgevoeligGeluid = new QTableWidgetItem(QString(tr("B")), QTableWidgetItem::Type);
+    QTableWidgetItem* stoornissenZicht = new QTableWidgetItem(QString(tr("S")), QTableWidgetItem::Type);
+    QTableWidgetItem* tintelingen = new QTableWidgetItem(QString(tr("T")),QTableWidgetItem::Type);
+    QTableWidgetItem* doofGevoel = new QTableWidgetItem(QString(tr("D")),QTableWidgetItem::Type);
+    QTableWidgetItem* spraakstoornissen = new QTableWidgetItem(QString(tr("P")),QTableWidgetItem::Type);
+    QTableWidgetItem* maandstonden = new QTableWidgetItem(QString(tr("R")),QTableWidgetItem::Type);
+    QTableWidgetItem* verminderingLevens = new QTableWidgetItem(QString(tr("C")),QTableWidgetItem::Type);
+    QTableWidgetItem* voedingOfDrank = new QTableWidgetItem(QString(tr("V")),QTableWidgetItem::Type);
+    QTableWidgetItem* stress = new QTableWidgetItem(QString(tr("S")),QTableWidgetItem::Type);
+    QTableWidgetItem* andereTriggers = new QTableWidgetItem(QString(tr("Andere Triggers")),QTableWidgetItem::Type);
+    QTableWidgetItem* geneesmiddel_1 = new QTableWidgetItem(QString(tr("Eerste geneesmiddel")),QTableWidgetItem::Type);
+    QTableWidgetItem* geneesmiddel_2 = new QTableWidgetItem(QString(tr("Tweede geneesmiddel")),QTableWidgetItem::Type);
+    QTableWidgetItem* geneesmiddel_3 = new QTableWidgetItem(QString(tr("Derde geneesmidel")),QTableWidgetItem::Type);
+    QTableWidgetItem* geneesmiddel_4 = new QTableWidgetItem(QString(tr("Vierde geneesmiddel")),QTableWidgetItem::Type);
+    QTableWidgetItem* tijdelijkOphoudenMetWerken = new QTableWidgetItem(QString(tr("J")),QTableWidgetItem::Type);
+    QTableWidgetItem* verstoordFamLeven = new QTableWidgetItem(QString(tr("F")),QTableWidgetItem::Type);
+    QTableWidgetItem* verstoordeVrijetijd = new QTableWidgetItem(QString(tr("L")),QTableWidgetItem::Type);
+    QTableWidgetItem* duurVanDeAanval = new QTableWidgetItem(QString(tr("Aantal uren of dagen")),QTableWidgetItem::Type);
 
 
     // Apply column header texts
@@ -99,7 +99,7 @@ int AlleHoofdpijnAanvallen::telRecenteAanvallen() const
     db.setDatabaseName("Hoofdpijnen.sqlite3");
     if (db.open())
     {
-        qDebug() << "Databestand hoofdpijnen.sqlite3 geopend.";
+        qDebug() << tr("Databestand hoofdpijnen.sqlite3 geopend.");
         QString command = "SELECT * FROM Hoofdpijnen";
         QSqlQuery query(db);
         if (query.exec(command)) {
@@ -112,13 +112,13 @@ int AlleHoofdpijnAanvallen::telRecenteAanvallen() const
         }
         else
         {
-            qDebug() << "Probleem bij openen gegevensbestand";
+            qDebug() << tr("Probleem bij openen gegevensbestand");
             exit(4);
         }
     }
     // db.close();
     // QSqlDatabase::removeDatabase( QSqlDatabase::defaultConnection );
-    qDebug() << hoofdpijnAanvallen << " hoofdpijn aanvallen in het databestand";
+    qDebug() << hoofdpijnAanvallen << tr(" hoofdpijn aanvallen in het databestand");
     return hoofdpijnAanvallen;
 }
 
@@ -385,11 +385,11 @@ void AlleHoofdpijnAanvallen::toonRecenteAanvallen() const
 
                 i++;
             }
-            qDebug() << "Hoofdpijnen weergegeven";
+            qDebug() << tr("Hoofdpijnen weergegeven");
         }
         else
         {
-            qDebug() << "Probleem bij openen gegevensbestand";
+            qDebug() << tr("Probleem bij openen gegevensbestand");
             exit(4);
         }
         // Set resize to make the columns fit their content

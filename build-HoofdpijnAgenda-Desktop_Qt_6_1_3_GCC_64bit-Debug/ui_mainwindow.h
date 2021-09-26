@@ -35,6 +35,7 @@ public:
     QAction *actionGegevens_Exporteren;
     QAction *action_Ernst_van_de_hoofdpijnen;
     QAction *action_Ernst;
+    QAction *actionSymptomen;
     QWidget *centralwidget;
     QLabel *Background;
     QLabel *label;
@@ -82,6 +83,8 @@ public:
         action_Ernst_van_de_hoofdpijnen->setObjectName(QString::fromUtf8("action_Ernst_van_de_hoofdpijnen"));
         action_Ernst = new QAction(MainWindow);
         action_Ernst->setObjectName(QString::fromUtf8("action_Ernst"));
+        actionSymptomen = new QAction(MainWindow);
+        actionSymptomen->setObjectName(QString::fromUtf8("actionSymptomen"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         Background = new QLabel(centralwidget);
@@ -124,11 +127,11 @@ public:
         menuBestand->addAction(actionToon_Alle_Hoofdpijn_Aanvallen);
         menuBestand->addSeparator();
         menuBestand->addAction(action_Afsluiten);
-        menuHulpmiddelen->addAction(actionGegevens_Exporteren);
         menuHulpmiddelen->addAction(action_Gegevensbestand_Herstellen);
         menuH_ulp->addAction(action_Help);
         menuH_ulp->addAction(action_Informatie);
         menuGrafieken->addAction(action_Ernst);
+        menuGrafieken->addAction(actionSymptomen);
 
         retranslateUi(MainWindow);
 
@@ -149,6 +152,7 @@ public:
         actionGegevens_Exporteren->setText(QCoreApplication::translate("MainWindow", "Gegevens &Exporteren", nullptr));
         action_Ernst_van_de_hoofdpijnen->setText(QCoreApplication::translate("MainWindow", "&Ernst van de hoofdpijnen", nullptr));
         action_Ernst->setText(QCoreApplication::translate("MainWindow", "&Ernst", nullptr));
+        actionSymptomen->setText(QCoreApplication::translate("MainWindow", "&Symptomen", nullptr));
         Background->setText(QString());
         label->setText(QCoreApplication::translate("MainWindow", "Hoofdpijn Agenda", nullptr));
         menuBestand->setTitle(QCoreApplication::translate("MainWindow", "&Bestand", nullptr));
