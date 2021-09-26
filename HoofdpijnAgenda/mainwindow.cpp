@@ -289,7 +289,7 @@ void MainWindow::writePdf()
     // Personal Data
     painter.drawText(0,0, tr("Naam:"));
     painter.drawText(1000,0,Voornaam + " " + Achternaam);
-    painter.drawText(0,200, tr("Address:"));
+    painter.drawText(0,200, tr("Adres:"));
     painter.drawText(1000,200,Straat + " " + Huisnummer);
     painter.drawText(0,400,tr("Gemeente:"));
     painter.drawText(1000,400,Postcode + " " + Gemeente);

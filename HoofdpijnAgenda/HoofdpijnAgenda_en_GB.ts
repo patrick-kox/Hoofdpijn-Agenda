@@ -6,7 +6,7 @@
     <message>
         <location filename="allehoofdpijnaanvallen.ui" line="20"/>
         <source>Alle Hoofdpijn Aanvallen</source>
-        <translation type="unfinished"></translation>
+        <translation>All Headache Attacks</translation>
     </message>
     <message>
         <location filename="allehoofdpijnaanvallen.ui" line="42"/>
@@ -25,7 +25,21 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;V: Voedingsstoffen of drank	S: Stress					I: Imitrex&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;J: Tijdelijk ophouden met werken	F: Verstoord familiaal leven			N: Naramig&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;L: Verstoorde vrijetijdsactiviteiten						Z: Zomig&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Legend:								List of medication against headaches:		Tablet: TAB&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;U: Aan één zijde		K: Kloppend					AM: Mono-analgetica				Zetpil: ZP&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;H: Hindert de dagelijkse activiteit	V: Verergert met beweging			AB: Combinatieanalgetica				Neusspray: NS&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;N: Braakneigingen		O: Braken / Overgeven				AI: Anti-inflamatoire				Injectie: INJ&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;L: Overgevoelig voor licht		B: Overgevoelig voor geluid			MK: Migraine Kranit&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;S: Stoornissen van het zicht	T: Tintelingen				MP: Migpriv&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;D: Doof gevoel		P: Spraakstoornissen				C: Cafergot&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;R: Maandstonden		C: Vermindering van levensritme			D: Diergo Spray&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;V: Voedingsstoffen of drank	S: Stress					I: Imitrex&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;J: Tijdelijk ophouden met werken	F: Verstoord familiaal leven			N: Naramig&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;L: Verstoorde vrijetijdsactiviteiten						Z: Zomig&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="allehoofdpijnaanvallen.cpp" line="22"/>
@@ -764,7 +778,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="mainwindow.cpp" line="292"/>
-        <source>Address:</source>
+        <source>Adres:</source>
+        <oldsource>Address:</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

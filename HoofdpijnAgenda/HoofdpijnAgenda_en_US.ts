@@ -777,7 +777,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="mainwindow.cpp" line="292"/>
-        <source>Address:</source>
+        <source>Adres:</source>
+        <oldsource>Address:</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
