@@ -312,7 +312,7 @@ void MainWindow::writePdf()
     painter.drawText(500,2000,tr("Verergert met beweging"));
     painter.drawText(4400,2000,Beweging);
 
-    painter.drawText(100,2400,tr("Symptomen die die hoofdpijn begeleiden"));
+    painter.drawText(100,2400,tr("Symptomen die de hoofdpijn begeleiden"));
     painter.drawText(500,2600,tr("Braakneigingen"));
     painter.drawText(4400,2600,Braakneigingen);
     painter.drawText(500,2800,tr("Braken"));

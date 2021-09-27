@@ -19,5 +19,9 @@
         <file>HoofdpijnAgenda_en_US.ts</file>
         <file>HoofdpijnAgenda_nl_BE.ts</file>
         <file>HoofdpijnAgenda_nl_NL.ts</file>
+        <file>HoofdpijnAgenda_en_GB.qm</file>
+        <file>HoofdpijnAgenda_en_US.qm</file>
+        <file>HoofdpijnAgenda_nl_BE.qm</file>
+        <file>HoofdpijnAgenda_nl_NL.qm</file>
     </qresource>
 </RCC>

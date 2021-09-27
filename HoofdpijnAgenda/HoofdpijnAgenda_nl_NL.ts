@@ -875,8 +875,9 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="mainwindow.cpp" line="315"/>
-        <source>Symptomen die die hoofdpijn begeleiden</source>
-        <translation>Symptomen die die hoofdpijn begeleiden</translation>
+        <source>Symptomen die de hoofdpijn begeleiden</source>
+        <oldsource>Symptomen die die hoofdpijn begeleiden</oldsource>
+        <translation>Symptomen die de hoofdpijn begeleiden</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="316"/>
