@@ -65,3 +65,7 @@ DISTFILES += \
 
 RESOURCES += \
     Resources.qrc
+    
+RC_ICONS = hoofdpijnagenda.ico
+    
+# ICON = myapp.icns    
