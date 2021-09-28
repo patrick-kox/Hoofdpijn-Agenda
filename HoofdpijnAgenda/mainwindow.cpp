@@ -26,7 +26,33 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    // Open database file
+    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("Hoofdpijnen.sqlite3");
+    int gebruikers = 0;
+    if (db.open())
+    {
+        qDebug() << "Databestand hoofdpijnen.sqlite3 geopend.";
+        QString command = "SELECT * FROM Gebruikers";
+        QSqlQuery query(db);
+        if (query.exec(command)) {
+            // put user data into form
+            while (query.next())
+            {
+                gebruikers++;
+            }
+        }
+        if (gebruikers < 1)
+        {
+            GebruikersGegevens *data = new GebruikersGegevens;
+            qDebug() << tr("Toon gebruikersgegevens");
+            // data->show();
+            data->exec();
+            // QEventLoop loop;
+            // connect(this, SIGNAL(destroyed()), & loop, SLOT(quit()));
+            // loop.exec();
+        }
+    }
 }
 
 MainWindow::~MainWindow()

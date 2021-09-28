@@ -159,11 +159,5 @@ void initializeDB(QSqlDatabase db) {
             db.close();
             exit(3);
         }
-
-    // gebruiker toevoegen
-    GebruikersGegevens *data = new GebruikersGegevens;
-    qDebug() << "Toon gebruikersgegevens";
-    // db.close();
-    // QSqlDatabase::removeDatabase( QSqlDatabase::defaultConnection );
-    data->show();
+    db.close();
 }

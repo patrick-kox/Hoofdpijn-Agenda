@@ -260,6 +260,7 @@ DIST          = ../HoofdpijnAgenda/HoofdpijnAgenda_en_US.ts \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/features/spec_post.prf \
+		../HoofdpijnAgenda/.qmake.stash \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/features/default_pre.prf \
@@ -476,6 +477,7 @@ Makefile: ../HoofdpijnAgenda/HoofdpijnAgenda.pro ../../../../Qt/6.1.3/gcc_64/mks
 		../../../../Qt/6.1.3/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt/6.1.3/gcc_64/mkspecs/features/default_pre.prf \
@@ -670,6 +672,7 @@ Makefile: ../HoofdpijnAgenda/HoofdpijnAgenda.pro ../../../../Qt/6.1.3/gcc_64/mks
 ../../../../Qt/6.1.3/gcc_64/mkspecs/features/qt_config.prf:
 ../../../../Qt/6.1.3/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../../Qt/6.1.3/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt/6.1.3/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt/6.1.3/gcc_64/mkspecs/features/toolchain.prf:
 ../../../../Qt/6.1.3/gcc_64/mkspecs/features/default_pre.prf:
@@ -2081,6 +2084,26 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QString \
 		ui_mainwindow.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QAction \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaction.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QLabel \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpicture.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QMenu \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenu.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QMenuBar \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenubar.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QWidget \
 		../HoofdpijnAgenda/gebruikersgegevens.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialog \
 		../HoofdpijnAgenda/hoofdpijntoevoegen.h \
@@ -2090,7 +2113,6 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtableview.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractitemview.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractitemmodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qitemselectionmodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -2114,7 +2136,6 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QtCoreDepends \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractanimation.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstracteventdispatcher.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractproxymodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qanimationgroup.h \
@@ -2136,7 +2157,6 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcollator.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcommandlineoption.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcommandlineparser.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qconcatenatetablesproxymodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcryptographichash.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qdeadlinetimer.h \
@@ -2236,12 +2256,10 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextformat.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpen.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextoption.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessible.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessiblebridge.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessibleobject.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessibleplugin.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaction.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qactiongroup.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qbackingstore.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qwindow.h \
@@ -2258,8 +2276,6 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qgenericmatrix.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qgenericplugin.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qgenericpluginfactory.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qiconengine.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qiconengineplugin.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qimageiohandler.h \
@@ -2292,7 +2308,6 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpainter.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpainterpath.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpdfwriter.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpicture.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpixmapcache.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qrasterwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPaintDeviceWindow \
@@ -2315,10 +2330,8 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qaccessiblewidget.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qaction.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/QAction \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QActionGroup \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qboxlayout.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayout.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayoutitem.h \
@@ -2376,14 +2389,11 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qitemdelegate.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qitemeditorfactory.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qkeysequenceedit.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlabel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlcdnumber.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlistview.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlistwidget.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmdiarea.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmdisubwindow.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenu.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenubar.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qplaintextedit.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextedit.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qprogressbar.h \
@@ -2397,7 +2407,6 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QScrollerProperties \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qscrollerproperties.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QMetaType \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qshortcut.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QShortcut \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qsizegrip.h \
@@ -2456,7 +2465,6 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/QtOpenGLWidgetsDepends \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/qopenglwidget.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QWidget \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/qtopenglwidgetsversion.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qchartglobal.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qtcharts-config.h \
@@ -3704,6 +3712,54 @@ allehoofdpijnaanvallen.o: ../HoofdpijnAgenda/allehoofdpijnaanvallen.cpp ../Hoofd
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QTransform \
 		ui_allehoofdpijnaanvallen.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialogButtonBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QHeaderView \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qheaderview.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qvalidator.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qregularexpression.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qslider.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qstyle.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtabbar.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qrubberband.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QTableWidget \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtablewidget.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtableview.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QTextBrowser \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextedit.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextoption.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextcursor.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextformat.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpen.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QVBoxLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qgridlayout.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlDatabase \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqldatabase.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsqlglobal.h \
@@ -4305,7 +4361,14 @@ ernstgrafiek.o: ../HoofdpijnAgenda/ernstgrafiek.cpp ../HoofdpijnAgenda/ernstgraf
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsql-config.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
-		ui_ernstgrafiek.h
+		ui_ernstgrafiek.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialogButtonBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QFrame \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QHBoxLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ernstgrafiek.o ../HoofdpijnAgenda/ernstgrafiek.cpp
 
 gebruikersgegevens.o: ../HoofdpijnAgenda/gebruikersgegevens.cpp ../HoofdpijnAgenda/gebruikersgegevens.h \
@@ -4437,6 +4500,39 @@ gebruikersgegevens.o: ../HoofdpijnAgenda/gebruikersgegevens.cpp ../HoofdpijnAgen
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QTransform \
 		ui_gebruikersgegevens.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialogButtonBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QFormLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qformlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qgridlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QLabel \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpicture.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QLineEdit \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlineedit.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextcursor.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextformat.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpen.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextoption.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QVBoxLayout \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlDatabase \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqldatabase.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsqlglobal.h \
@@ -4573,7 +4669,36 @@ help.o: ../HoofdpijnAgenda/help.cpp ../HoofdpijnAgenda/help.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSize \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QTransform \
-		ui_help.h
+		ui_help.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialogButtonBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QTextBrowser \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextedit.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextoption.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextcursor.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextformat.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpen.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QVBoxLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qgridlayout.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o help.o ../HoofdpijnAgenda/help.cpp
 
 hoofdpijntoevoegen.o: ../HoofdpijnAgenda/hoofdpijntoevoegen.cpp ../HoofdpijnAgenda/hoofdpijntoevoegen.h \
@@ -4705,6 +4830,56 @@ hoofdpijntoevoegen.o: ../HoofdpijnAgenda/hoofdpijntoevoegen.cpp ../HoofdpijnAgen
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QTransform \
 		ui_hoofdpijntoevoegen.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QCheckBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qcheckbox.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDateEdit \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qdatetimeedit.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qdatetime.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcalendar.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qvalidator.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qregularexpression.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialogButtonBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QFormLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qformlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qgridlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QGridLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QHBoxLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QLabel \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpicture.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QLineEdit \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlineedit.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextcursor.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextformat.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpen.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextoption.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QSpacerItem \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QSpinBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qspinbox.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QTextBrowser \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextedit.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlDatabase \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqldatabase.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsqlglobal.h \
@@ -4715,7 +4890,6 @@ hoofdpijntoevoegen.o: ../HoofdpijnAgenda/hoofdpijntoevoegen.cpp ../HoofdpijnAgen
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QtCoreDepends \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractanimation.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstracteventdispatcher.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractitemmodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractproxymodel.h \
@@ -4726,13 +4900,9 @@ hoofdpijntoevoegen.o: ../HoofdpijnAgenda/hoofdpijntoevoegen.cpp ../HoofdpijnAgen
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qbuffer.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qbytearraymatcher.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcache.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcalendar.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcborarray.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcborvalue.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qdatetime.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcborcommon.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qregularexpression.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/quuid.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcbormap.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcborstream.h \
@@ -4742,7 +4912,6 @@ hoofdpijntoevoegen.o: ../HoofdpijnAgenda/hoofdpijntoevoegen.cpp ../HoofdpijnAgen
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcollator.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcommandlineoption.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcommandlineparser.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qconcatenatetablesproxymodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcryptographichash.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qdeadlinetimer.h \
@@ -4846,19 +5015,14 @@ hoofdpijntoevoegen.o: ../HoofdpijnAgenda/hoofdpijntoevoegen.cpp ../HoofdpijnAgen
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qstyleditemdelegate.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qstyleoption.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qvalidator.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qslider.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractslider.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qstyle.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtabbar.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qrubberband.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlistview.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractitemview.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qcombobox.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlrelationaltablemodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqltablemodel.h \
@@ -5315,6 +5479,26 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QString \
 		ui_mainwindow.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QAction \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaction.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QLabel \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpicture.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QMenu \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenu.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QMenuBar \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenubar.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QWidget \
 		../HoofdpijnAgenda/gebruikersgegevens.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialog \
 		../HoofdpijnAgenda/hoofdpijntoevoegen.h \
@@ -5324,7 +5508,6 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtableview.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractitemview.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractitemmodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qitemselectionmodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -5348,7 +5531,6 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QtCoreDepends \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractanimation.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstracteventdispatcher.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractproxymodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qanimationgroup.h \
@@ -5370,7 +5552,6 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcollator.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcommandlineoption.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcommandlineparser.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qconcatenatetablesproxymodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcryptographichash.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qdeadlinetimer.h \
@@ -5470,12 +5651,10 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextformat.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpen.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextoption.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessible.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessiblebridge.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessibleobject.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessibleplugin.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaction.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qactiongroup.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qbackingstore.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qwindow.h \
@@ -5492,8 +5671,6 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qgenericmatrix.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qgenericplugin.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qgenericpluginfactory.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qiconengine.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qiconengineplugin.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qimageiohandler.h \
@@ -5526,7 +5703,6 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpainter.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpainterpath.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpdfwriter.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpicture.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpixmapcache.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qrasterwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPaintDeviceWindow \
@@ -5549,10 +5725,8 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qaccessiblewidget.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qaction.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/QAction \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QActionGroup \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qboxlayout.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayout.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayoutitem.h \
@@ -5610,14 +5784,11 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qitemdelegate.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qitemeditorfactory.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qkeysequenceedit.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlabel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlcdnumber.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlistview.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlistwidget.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmdiarea.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmdisubwindow.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenu.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenubar.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qplaintextedit.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextedit.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qprogressbar.h \
@@ -5631,7 +5802,6 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QScrollerProperties \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qscrollerproperties.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QMetaType \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qshortcut.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QShortcut \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qsizegrip.h \
@@ -5690,7 +5860,6 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/QtOpenGLWidgetsDepends \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/qopenglwidget.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QWidget \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/qtopenglwidgetsversion.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qchartglobal.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qtcharts-config.h \
@@ -5779,7 +5948,6 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPainter \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageSize \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageLayout \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QLocale \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QTranslator \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QtSql \
@@ -5950,6 +6118,26 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QString \
 		ui_mainwindow.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QAction \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaction.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QLabel \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpicture.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QMenu \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenu.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QMenuBar \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenubar.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QWidget \
 		../HoofdpijnAgenda/gebruikersgegevens.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialog \
 		../HoofdpijnAgenda/hoofdpijntoevoegen.h \
@@ -5959,7 +6147,6 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtableview.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractitemview.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractitemmodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qitemselectionmodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -5983,7 +6170,6 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QtCoreDepends \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractanimation.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstracteventdispatcher.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qabstractproxymodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qanimationgroup.h \
@@ -6005,7 +6191,6 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcollator.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcommandlineoption.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcommandlineparser.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qconcatenatetablesproxymodel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcryptographichash.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qdeadlinetimer.h \
@@ -6105,12 +6290,10 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextformat.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpen.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextoption.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessible.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessiblebridge.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessibleobject.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaccessibleplugin.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaction.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qactiongroup.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qbackingstore.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qwindow.h \
@@ -6127,8 +6310,6 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qgenericmatrix.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qgenericplugin.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qgenericpluginfactory.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qiconengine.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qiconengineplugin.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qimageiohandler.h \
@@ -6161,7 +6342,6 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpainter.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpainterpath.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpdfwriter.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpicture.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpixmapcache.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qrasterwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPaintDeviceWindow \
@@ -6184,10 +6364,8 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qaccessiblewidget.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qaction.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtGui/QAction \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QActionGroup \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qboxlayout.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayout.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayoutitem.h \
@@ -6245,14 +6423,11 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qitemdelegate.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qitemeditorfactory.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qkeysequenceedit.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlabel.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlcdnumber.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlistview.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlistwidget.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmdiarea.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmdisubwindow.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenu.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qmenubar.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qplaintextedit.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextedit.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qprogressbar.h \
@@ -6266,7 +6441,6 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QScrollerProperties \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qscrollerproperties.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QMetaType \
-		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qshortcut.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QShortcut \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qsizegrip.h \
@@ -6325,7 +6499,6 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/QtOpenGLWidgetsDepends \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/qopenglwidget.h \
-		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QWidget \
 		../../../../Qt/6.1.3/gcc_64/include/QtOpenGLWidgets/qtopenglwidgetsversion.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qchartglobal.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCharts/qtcharts-config.h \
@@ -6544,7 +6717,33 @@ over.o: ../HoofdpijnAgenda/over.cpp ../HoofdpijnAgenda/over.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSize \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QTransform \
-		ui_over.h
+		ui_over.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialogButtonBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QGridLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qgridlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QLabel \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpicture.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QSpacerItem \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o over.o ../HoofdpijnAgenda/over.cpp
 
 recentehoofdpijnaanvallen.o: ../HoofdpijnAgenda/recentehoofdpijnaanvallen.cpp ../HoofdpijnAgenda/recentehoofdpijnaanvallen.h \
@@ -6697,6 +6896,33 @@ recentehoofdpijnaanvallen.o: ../HoofdpijnAgenda/recentehoofdpijnaanvallen.cpp ..
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qrubberband.h \
 		ui_recentehoofdpijnaanvallen.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialogButtonBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QHeaderView \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qheaderview.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QTextBrowser \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextbrowser.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtextedit.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextoption.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextcursor.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qtextformat.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/qpen.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QVBoxLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qgridlayout.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlDatabase \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqldatabase.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsqlglobal.h \
@@ -7303,7 +7529,14 @@ symptomengrafiek.o: ../HoofdpijnAgenda/symptomengrafiek.cpp ../HoofdpijnAgenda/s
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageSize \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageLayout \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QFile \
-		ui_symptomengrafiek.h
+		ui_symptomengrafiek.h \
+		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QDialogButtonBox \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QFrame \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QHBoxLayout \
+		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o symptomengrafiek.o ../HoofdpijnAgenda/symptomengrafiek.cpp
 
 qrc_Resources.o: qrc_Resources.cpp 

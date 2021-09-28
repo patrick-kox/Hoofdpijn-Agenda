@@ -63,6 +63,8 @@ int main(int argc, char *argv[])
         {
             qDebug() << "Gegevensbestand wordt aangemaakt.";
            initializeDB(db);
+           // GebruikersGegevens *gebruikerToevoegen = new GebruikersGegevens;
+           // gebruikerToevoegen->show();
            query.clear();
            db.close();
         }
