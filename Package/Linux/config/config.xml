@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Hoofdpijn Agenda</Name>
+    <Version>3.0.0</Version>
+    <Title>Hoofdpijn Agenda Installer</Title>
+    <Publisher>Patrick Kox</Publisher>
+    <StartMenuDir>HoofdpijnAgenda</StartMenuDir>
+    <TargetDir>@HomeDir@/HoofdpijnAgenda</TargetDir>
+</Installer>
