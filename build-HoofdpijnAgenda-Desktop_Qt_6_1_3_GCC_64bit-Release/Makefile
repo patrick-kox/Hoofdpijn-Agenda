@@ -40,7 +40,7 @@ DISTNAME      = HoofdpijnAgenda1.0.0
 DISTDIR = /home/patrick/Documents/GitHub/Hoofdpijn-Agenda/build-HoofdpijnAgenda-Desktop_Qt_6_1_3_GCC_64bit-Release/.tmp/HoofdpijnAgenda1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1 -Wl,-rpath,/home/patrick/Qt/6.1.3/gcc_64/lib
-LIBS          = $(SUBLIBS) /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6Charts.so -pthread /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6OpenGLWidgets.so /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6Widgets.so /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6OpenGL.so /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6Gui.so /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6Sql.so /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6Core.so -lpthread -lGL   
+LIBS          = $(SUBLIBS) -Wl,-rpath=$$ORIGIN/libs /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6Charts.so -pthread /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6OpenGLWidgets.so /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6Widgets.so /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6OpenGL.so /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6Gui.so /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6Sql.so /home/patrick/Qt/6.1.3/gcc_64/lib/libQt6Core.so -lpthread -lGL   
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
@@ -2083,7 +2083,7 @@ moc_mainwindow.cpp: ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcalendar.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QString \
-		ui_mainwindow.h \
+		../HoofdpijnAgenda/ui_mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QAction \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaction.h \
@@ -3711,7 +3711,7 @@ allehoofdpijnaanvallen.o: ../HoofdpijnAgenda/allehoofdpijnaanvallen.cpp ../Hoofd
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSize \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QTransform \
-		ui_allehoofdpijnaanvallen.h \
+		../HoofdpijnAgenda/ui_allehoofdpijnaanvallen.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
@@ -4361,7 +4361,7 @@ ernstgrafiek.o: ../HoofdpijnAgenda/ernstgrafiek.cpp ../HoofdpijnAgenda/ernstgraf
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qtsql-config.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/QSqlQuery \
 		../../../../Qt/6.1.3/gcc_64/include/QtSql/qsqlquery.h \
-		ui_ernstgrafiek.h \
+		../HoofdpijnAgenda/ui_ernstgrafiek.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \
@@ -4499,7 +4499,7 @@ gebruikersgegevens.o: ../HoofdpijnAgenda/gebruikersgegevens.cpp ../HoofdpijnAgen
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSize \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QTransform \
-		ui_gebruikersgegevens.h \
+		../HoofdpijnAgenda/ui_gebruikersgegevens.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
@@ -4669,7 +4669,7 @@ help.o: ../HoofdpijnAgenda/help.cpp ../HoofdpijnAgenda/help.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSize \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QTransform \
-		ui_help.h \
+		../HoofdpijnAgenda/ui_help.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
@@ -4829,7 +4829,7 @@ hoofdpijntoevoegen.o: ../HoofdpijnAgenda/hoofdpijntoevoegen.cpp ../HoofdpijnAgen
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSize \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QTransform \
-		ui_hoofdpijntoevoegen.h \
+		../HoofdpijnAgenda/ui_hoofdpijntoevoegen.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
@@ -5478,7 +5478,7 @@ main.o: ../HoofdpijnAgenda/main.cpp ../HoofdpijnAgenda/mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcalendar.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QString \
-		ui_mainwindow.h \
+		../HoofdpijnAgenda/ui_mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QAction \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaction.h \
@@ -6117,7 +6117,7 @@ mainwindow.o: ../HoofdpijnAgenda/mainwindow.cpp ../HoofdpijnAgenda/mainwindow.h 
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qcalendar.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QString \
-		ui_mainwindow.h \
+		../HoofdpijnAgenda/ui_mainwindow.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QAction \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qaction.h \
@@ -6717,7 +6717,7 @@ over.o: ../HoofdpijnAgenda/over.cpp ../HoofdpijnAgenda/over.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSize \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QSizeF \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QTransform \
-		ui_over.h \
+		../HoofdpijnAgenda/ui_over.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/qicon.h \
@@ -6895,7 +6895,7 @@ recentehoofdpijnaanvallen.o: ../HoofdpijnAgenda/recentehoofdpijnaanvallen.cpp ..
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtabbar.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/qrubberband.h \
-		ui_recentehoofdpijnaanvallen.h \
+		../HoofdpijnAgenda/ui_recentehoofdpijnaanvallen.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QVariant \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
@@ -7529,7 +7529,7 @@ symptomengrafiek.o: ../HoofdpijnAgenda/symptomengrafiek.cpp ../HoofdpijnAgenda/s
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageSize \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QPageLayout \
 		../../../../Qt/6.1.3/gcc_64/include/QtCore/QFile \
-		ui_symptomengrafiek.h \
+		../HoofdpijnAgenda/ui_symptomengrafiek.h \
 		../../../../Qt/6.1.3/gcc_64/include/QtGui/QIcon \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QAbstractButton \
 		../../../../Qt/6.1.3/gcc_64/include/QtWidgets/QApplication \

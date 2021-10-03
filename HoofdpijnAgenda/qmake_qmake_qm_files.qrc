@@ -1,0 +1,8 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="i18n">
+<file alias="HoofdpijnAgenda_nl_BE.qm">/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda/.qm/HoofdpijnAgenda_nl_BE.qm</file>
+<file alias="HoofdpijnAgenda_nl_NL.qm">/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda/.qm/HoofdpijnAgenda_nl_NL.qm</file>
+<file alias="HoofdpijnAgenda_en_US.qm">/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda/.qm/HoofdpijnAgenda_en_US.qm</file>
+<file alias="HoofdpijnAgenda_en_GB.qm">/home/patrick/Documents/GitHub/Hoofdpijn-Agenda/HoofdpijnAgenda/.qm/HoofdpijnAgenda_en_GB.qm</file>
+</qresource>
+</RCC>

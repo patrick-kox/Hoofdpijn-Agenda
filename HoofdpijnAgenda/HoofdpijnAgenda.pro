@@ -62,10 +62,16 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     HoofdpijnAgenda_en_US.ts
     HoofdpijnAgenda_nl_BE.ts
+    HoofdpijnAgenda_en_GB.ts
+    HoofdpijnAgenda_nl_NL.ts
 
 RESOURCES += \
     Resources.qrc
     
 RC_ICONS = hoofdpijnagenda.ico
     
-# ICON = myapp.icns    
+# ICON = myapp.icns
+
+unix:!mac {
+LIBS += -Wl,-rpath=\$$ORIGIN/libs
+}
